@@ -443,6 +443,76 @@ class SimulationSession {
       preview: this._getWorldBlocks(24),
     };
   }
+
+  async getBlockAt({ x, y, z }) {
+    const key = `${x},${y},${z}`;
+    const block = this.world.get(key);
+    return { action: "get_block_at", position: { x, y, z }, name: block ?? "air", simulated: true };
+  }
+
+  async useBlock({ x, y, z }) {
+    return { action: "use_block", position: { x, y, z }, simulated: true };
+  }
+
+  async equipItem({ item, destination = "hand" }) {
+    return { action: "equip_item", item, destination, inventory: inventoryToList(this.inventory), simulated: true };
+  }
+
+  async dropItem({ item, count = 1 }) {
+    return { action: "drop_item", item, count, inventory: inventoryToList(this.inventory), simulated: true };
+  }
+
+  async eat({ item }) {
+    return { action: "eat", item, inventory: inventoryToList(this.inventory), simulated: true };
+  }
+
+  async lookAt({ x, y, z }) {
+    return { action: "look_at", position: { x, y, z }, simulated: true };
+  }
+
+  async jump() {
+    return { action: "jump", simulated: true };
+  }
+
+  async setSprint({ sprint = true }) {
+    return { action: "set_sprint", sprint, simulated: true };
+  }
+
+  async setSneak({ sneak = true }) {
+    return { action: "set_sneak", sneak, simulated: true };
+  }
+
+  async sleep({ x, y, z }) {
+    return { action: "sleep", position: { x, y, z }, simulated: true };
+  }
+
+  async wake() {
+    return { action: "wake", simulated: true };
+  }
+
+  async collectItems({ radius = 8 }) {
+    return { action: "collect_items", collected: 0, radius, inventory: inventoryToList(this.inventory), simulated: true };
+  }
+
+  async fish() {
+    return { action: "fish", inventory: inventoryToList(this.inventory), simulated: true };
+  }
+
+  async mountEntity({ name }) {
+    return { action: "mount_entity", target: name, simulated: true };
+  }
+
+  async dismount() {
+    return { action: "dismount", simulated: true };
+  }
+
+  async interactEntity({ name }) {
+    return { action: "interact_entity", target: name, simulated: true };
+  }
+
+  async stopMovement() {
+    return { action: "stop_movement", simulated: true };
+  }
 }
 
 
@@ -493,7 +563,8 @@ class MineflayerSession {
       checkTimeoutInterval: 300000,
     });
 
-    bot.loadPlugin(pathfinderPkg.pathfinder);
+    const pathfinderExports = pathfinderPkg.default ?? pathfinderPkg;
+    bot.loadPlugin(pathfinderExports.pathfinder);
 
     bot.on("chat", (username, message) => {
       if (username !== bot.username) {
@@ -512,7 +583,7 @@ class MineflayerSession {
     await once(bot, "spawn");
 
     this.bot = bot;
-    this.pathfinder = pathfinderPkg;
+    this.pathfinder = pathfinderExports;
     this.registry = minecraftDataModule.default(bot.version);
     this.config = {
       host: config.host || "127.0.0.1",
@@ -621,7 +692,8 @@ class MineflayerSession {
   async moveTo({ x, y, z, range = 1, timeout_ms = 30000 }) {
     const bot = this._requireBot();
     const { Movements, goals } = this.pathfinder;
-    const movements = new Movements(bot, this.registry);
+    const movements = new Movements(bot);
+    movements.canDig = true;
     const goal = new goals.GoalNear(x, y, z, range);
     bot.pathfinder.setMovements(movements);
     const operation = bot.pathfinder.goto(goal);
@@ -824,6 +896,190 @@ class MineflayerSession {
       inventory: this._inventory(),
     };
   }
+
+  async getBlockAt({ x, y, z }) {
+    const bot = this._requireBot();
+    const block = bot.blockAt(new Vec3(x, y, z));
+    return {
+      action: "get_block_at",
+      position: { x, y, z },
+      name: block?.name ?? "air",
+    };
+  }
+
+  async useBlock({ x, y, z }) {
+    const bot = this._requireBot();
+    const block = bot.blockAt(new Vec3(x, y, z));
+    if (!block || block.name === "air") {
+      throw new Error(`No block at ${x},${y},${z}.`);
+    }
+    await this.moveTo({ x, y, z, range: 4, timeout_ms: 15000 });
+    await bot.activateBlock(block);
+    return { action: "use_block", position: { x, y, z }, name: block.name };
+  }
+
+  async equipItem({ item, destination = "hand" }) {
+    const bot = this._requireBot();
+    const slot = bot.inventory.items().find((i) => i.name === item);
+    if (!slot) {
+      throw new Error(`Item ${item} not in inventory.`);
+    }
+    await bot.equip(slot, destination);
+    return { action: "equip_item", item, destination, inventory: this._inventory() };
+  }
+
+  async dropItem({ item, count = 1 }) {
+    const bot = this._requireBot();
+    const slot = bot.inventory.items().find((i) => i.name === item);
+    if (!slot) {
+      throw new Error(`Item ${item} not in inventory.`);
+    }
+    const toDrop = Math.min(count, slot.count);
+    await bot.toss(slot.type, null, toDrop);
+    return { action: "drop_item", item, count: toDrop, inventory: this._inventory() };
+  }
+
+  async eat({ item }) {
+    const bot = this._requireBot();
+    const slot = bot.inventory.items().find((i) => i.name === item);
+    if (!slot) {
+      throw new Error(`Item ${item} not in inventory.`);
+    }
+    await bot.equip(slot, "hand");
+    await bot.consume();
+    return { action: "eat", item, inventory: this._inventory() };
+  }
+
+  async lookAt({ x, y, z }) {
+    const bot = this._requireBot();
+    const target = new Vec3(x, y, z);
+    await bot.lookAt(target.offset(0.5, 0.5, 0.5));
+    return { action: "look_at", position: { x, y, z } };
+  }
+
+  async jump() {
+    const bot = this._requireBot();
+    bot.setControlState("jump", true);
+    await new Promise((r) => setTimeout(r, 250));
+    bot.setControlState("jump", false);
+    return { action: "jump" };
+  }
+
+  async setSprint({ sprint = true }) {
+    const bot = this._requireBot();
+    bot.setControlState("sprint", !!sprint);
+    return { action: "set_sprint", sprint: !!sprint };
+  }
+
+  async setSneak({ sneak = true }) {
+    const bot = this._requireBot();
+    bot.setControlState("sneak", !!sneak);
+    return { action: "set_sneak", sneak: !!sneak };
+  }
+
+  async sleep({ x, y, z }) {
+    const bot = this._requireBot();
+    const block = bot.blockAt(new Vec3(x, y, z));
+    if (!block || !block.name?.includes("bed")) {
+      throw new Error(`No bed at ${x},${y},${z}.`);
+    }
+    await this.moveTo({ x, y, z, range: 2, timeout_ms: 15000 });
+    await bot.sleep(block);
+    return { action: "sleep", position: { x, y, z } };
+  }
+
+  async wake() {
+    const bot = this._requireBot();
+    if (bot.isSleeping) {
+      bot.wake();
+    }
+    return { action: "wake" };
+  }
+
+  async collectItems({ radius = 8 } = {}) {
+    const bot = this._requireBot();
+    const items = Object.values(bot.entities).filter((e) => e.name === "item" || e.objectType === "Item");
+    let collected = 0;
+    for (const entity of items) {
+      const dist = bot.entity.position.distanceTo(entity.position);
+      if (dist > radius) continue;
+      try {
+        await this.moveTo({
+          x: Math.floor(entity.position.x),
+          y: Math.floor(entity.position.y),
+          z: Math.floor(entity.position.z),
+          range: 2,
+          timeout_ms: 10000,
+        });
+        collected += 1;
+      } catch (_) {
+        break;
+      }
+    }
+    return { action: "collect_items", collected, radius, inventory: this._inventory() };
+  }
+
+  async fish() {
+    const bot = this._requireBot();
+    const rod = bot.inventory.items().find((i) => i.name === "fishing_rod");
+    if (!rod) {
+      throw new Error("No fishing_rod in inventory.");
+    }
+    await bot.equip(rod, "hand");
+    await bot.fish();
+    return { action: "fish", inventory: this._inventory() };
+  }
+
+  async mountEntity({ name }) {
+    const bot = this._requireBot();
+    const entity = Object.values(bot.entities).find((e) => (e.name || e.username || e.type) === name);
+    if (!entity) {
+      throw new Error(`No entity named ${name} found.`);
+    }
+    await this.moveTo({
+      x: Math.floor(entity.position.x),
+      y: Math.floor(entity.position.y),
+      z: Math.floor(entity.position.z),
+      range: 2,
+      timeout_ms: 15000,
+    });
+    await bot.mount(entity);
+    return { action: "mount_entity", target: name };
+  }
+
+  async dismount() {
+    const bot = this._requireBot();
+    if (bot.vehicle) {
+      bot.dismount();
+    }
+    return { action: "dismount" };
+  }
+
+  async interactEntity({ name }) {
+    const bot = this._requireBot();
+    const entity = Object.values(bot.entities).find((e) => (e.name || e.username || e.type) === name);
+    if (!entity) {
+      throw new Error(`No entity named ${name} found.`);
+    }
+    await this.moveTo({
+      x: Math.floor(entity.position.x),
+      y: Math.floor(entity.position.y),
+      z: Math.floor(entity.position.z),
+      range: 3,
+      timeout_ms: 15000,
+    });
+    await bot.activateEntity(entity);
+    return { action: "interact_entity", target: name };
+  }
+
+  async stopMovement() {
+    const bot = this._requireBot();
+    if (bot.pathfinder) {
+      bot.pathfinder.stop();
+    }
+    bot.clearControlStates();
+    return { action: "stop_movement" };
+  }
 }
 
 
@@ -890,6 +1146,23 @@ async function main() {
         "/actions/attack_entity": (payload) => session.attackEntity(payload),
         "/actions/send_chat": (payload) => session.sendChat(payload),
         "/actions/build_structure": (payload) => session.buildStructure(payload),
+        "/actions/get_block_at": (payload) => session.getBlockAt(payload),
+        "/actions/use_block": (payload) => session.useBlock(payload),
+        "/actions/equip_item": (payload) => session.equipItem(payload),
+        "/actions/drop_item": (payload) => session.dropItem(payload),
+        "/actions/eat": (payload) => session.eat(payload),
+        "/actions/look_at": (payload) => session.lookAt(payload),
+        "/actions/jump": (payload) => session.jump(payload),
+        "/actions/set_sprint": (payload) => session.setSprint(payload),
+        "/actions/set_sneak": (payload) => session.setSneak(payload),
+        "/actions/sleep": (payload) => session.sleep(payload),
+        "/actions/wake": (payload) => session.wake(payload),
+        "/actions/collect_items": (payload) => session.collectItems(payload),
+        "/actions/fish": (payload) => session.fish(payload),
+        "/actions/mount_entity": (payload) => session.mountEntity(payload),
+        "/actions/dismount": (payload) => session.dismount(payload),
+        "/actions/interact_entity": (payload) => session.interactEntity(payload),
+        "/actions/stop_movement": (payload) => session.stopMovement(payload),
       };
 
       if (req.method === "POST" && routes[url.pathname]) {

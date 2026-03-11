@@ -115,6 +115,59 @@ class BridgeClient:
             },
         )
 
+    async def get_block_at(self, *, x: int, y: int, z: int) -> dict[str, Any]:
+        return await self._request("POST", "/actions/get_block_at", json={"x": x, "y": y, "z": z})
+
+    async def use_block(self, *, x: int, y: int, z: int) -> dict[str, Any]:
+        return await self._request("POST", "/actions/use_block", json={"x": x, "y": y, "z": z})
+
+    async def equip_item(self, *, item: str, destination: str = "hand") -> dict[str, Any]:
+        return await self._request(
+            "POST", "/actions/equip_item", json={"item": item, "destination": destination}
+        )
+
+    async def drop_item(self, *, item: str, count: int = 1) -> dict[str, Any]:
+        return await self._request("POST", "/actions/drop_item", json={"item": item, "count": count})
+
+    async def eat(self, *, item: str) -> dict[str, Any]:
+        return await self._request("POST", "/actions/eat", json={"item": item})
+
+    async def look_at(self, *, x: int, y: int, z: int) -> dict[str, Any]:
+        return await self._request("POST", "/actions/look_at", json={"x": x, "y": y, "z": z})
+
+    async def jump(self) -> dict[str, Any]:
+        return await self._request("POST", "/actions/jump", json={})
+
+    async def set_sprint(self, *, sprint: bool = True) -> dict[str, Any]:
+        return await self._request("POST", "/actions/set_sprint", json={"sprint": sprint})
+
+    async def set_sneak(self, *, sneak: bool = True) -> dict[str, Any]:
+        return await self._request("POST", "/actions/set_sneak", json={"sneak": sneak})
+
+    async def sleep(self, *, x: int, y: int, z: int) -> dict[str, Any]:
+        return await self._request("POST", "/actions/sleep", json={"x": x, "y": y, "z": z})
+
+    async def wake(self) -> dict[str, Any]:
+        return await self._request("POST", "/actions/wake", json={})
+
+    async def collect_items(self, *, radius: int = 8) -> dict[str, Any]:
+        return await self._request("POST", "/actions/collect_items", json={"radius": radius})
+
+    async def fish(self) -> dict[str, Any]:
+        return await self._request("POST", "/actions/fish", json={})
+
+    async def mount_entity(self, *, name: str) -> dict[str, Any]:
+        return await self._request("POST", "/actions/mount_entity", json={"name": name})
+
+    async def dismount(self) -> dict[str, Any]:
+        return await self._request("POST", "/actions/dismount", json={})
+
+    async def interact_entity(self, *, name: str) -> dict[str, Any]:
+        return await self._request("POST", "/actions/interact_entity", json={"name": name})
+
+    async def stop_movement(self) -> dict[str, Any]:
+        return await self._request("POST", "/actions/stop_movement", json={})
+
     async def _request(
         self,
         method: str,
@@ -124,8 +177,15 @@ class BridgeClient:
         params: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
         response = await self._client.request(method, path, json=json, params=params)
-        response.raise_for_status()
-        payload = response.json()
+        try:
+            payload = response.json()
+        except Exception:
+            payload = {}
+        if not response.is_success:
+            msg = payload.get("error") if isinstance(payload, dict) else None
+            if not msg:
+                msg = f"Bridge returned {response.status_code}: {response.text[:500] if response.text else 'no body'}"
+            raise BridgeError(msg)
         if not payload.get("ok"):
             raise BridgeError(payload.get("error", "Unknown bridge error"))
         return payload["result"]
