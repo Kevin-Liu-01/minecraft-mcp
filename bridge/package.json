@@ -1,0 +1,18 @@
+{
+  "name": "minecraft-dedalus-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Mineflayer bridge for the Minecraft Dedalus MCP project",
+  "scripts": {
+    "start": "node server.mjs",
+    "simulate": "node server.mjs --simulate"
+  },
+  "dependencies": {
+    "minecraft-data": "^3.92.0",
+    "mineflayer": "^4.35.0",
+    "mineflayer-pathfinder": "^2.4.5",
+    "vec3": "^0.1.10"
+  }
+}
+

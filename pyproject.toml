@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling>=1.26.3"]
+build-backend = "hatchling.build"
+
+[project]
+name = "minecraft-dedalus-mcp"
+version = "0.1.0"
+description = "LAN-capable Minecraft MCP server built with Dedalus MCP and a Mineflayer bridge"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Kevin Liu" }]
+dependencies = [
+  "dedalus_labs>=0.3.0",
+  "dedalus_mcp>=0.7.0",
+  "httpx>=0.28.1",
+  "pydantic>=2.12.0",
+  "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4.2",
+  "pytest-asyncio>=1.2.0",
+]
+
+[project.scripts]
+minecraft-dedalus-mcp = "minecraft_dedalus_mcp.server:main"
+minecraft-dedalus-agent = "minecraft_dedalus_mcp.agent_demo:main"
+minecraft-dedalus-run-sim = "minecraft_dedalus_mcp.run_sim:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/minecraft_dedalus_mcp"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.uv]
+package = true
