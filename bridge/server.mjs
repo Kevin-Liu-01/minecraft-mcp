@@ -483,6 +483,7 @@ class MineflayerSession {
     const mineflayer = await import("mineflayer");
     const pathfinderPkg = await import("mineflayer-pathfinder");
     const minecraftDataModule = await import("minecraft-data");
+    const pathfinderApi = pathfinderPkg.default ?? pathfinderPkg;
 
     const bot = mineflayer.createBot({
       host: config.host || "127.0.0.1",
@@ -493,7 +494,7 @@ class MineflayerSession {
       checkTimeoutInterval: 300000,
     });
 
-    bot.loadPlugin(pathfinderPkg.pathfinder);
+    bot.loadPlugin(pathfinderApi.pathfinder);
 
     bot.on("chat", (username, message) => {
       if (username !== bot.username) {
@@ -512,7 +513,7 @@ class MineflayerSession {
     await once(bot, "spawn");
 
     this.bot = bot;
-    this.pathfinder = pathfinderPkg;
+    this.pathfinder = pathfinderApi;
     this.registry = minecraftDataModule.default(bot.version);
     this.config = {
       host: config.host || "127.0.0.1",
@@ -921,4 +922,3 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
-
