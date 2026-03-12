@@ -28,7 +28,7 @@ def _parse_args() -> argparse.Namespace:
         default=os.environ.get("MCP_SERVER_URL", "http://127.0.0.1:8000/mcp"),
         help="MCP server URL (default: MCP_SERVER_URL or http://127.0.0.1:8000/mcp)",
     )
-    p.add_argument("--model", default=os.environ.get("DEDALUS_MODEL", "openai/gpt-4o-mini"))
+    p.add_argument("--model", default=os.environ.get("DEDALUS_MODEL", "openai/gpt-5-nano-mini"))
     p.add_argument("--max-steps", type=int, default=20)
     p.add_argument("--goal", default=DEFAULT_GOAL, help="Agent goal (bot is assumed already in-world)")
     return p.parse_args()

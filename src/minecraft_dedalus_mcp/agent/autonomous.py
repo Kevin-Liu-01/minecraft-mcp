@@ -67,7 +67,7 @@ class AutonomousLoop:
     ) -> None:
         self._mcp_url = mcp_url
         self._run_agent = run_agent_fn
-        self._model = model or os.environ.get("DEDALUS_MODEL", "openai/gpt-4o-mini")
+        self._model = model or os.environ.get("DEDALUS_MODEL", "openai/gpt-5-nano-mini")
         self._cycle_delay = cycle_delay
         self._max_steps = max_steps_per_cycle
         self._verbose = verbose

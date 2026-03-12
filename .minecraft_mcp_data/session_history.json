@@ -10083,5 +10083,2600 @@
     "error": null,
     "timestamp": 1773276231.1670961,
     "duration_ms": 15622.369050979614
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 50542
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 50542,
+      "position": {
+        "x": 30,
+        "y": -60,
+        "z": -32
+      },
+      "health": 19.007999420166016,
+      "food": 10.0,
+      "inventory": [
+        {
+          "item": "porkchop",
+          "count": 17
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773277157.487627,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 50542
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 50542,
+      "position": {
+        "x": 30,
+        "y": -60,
+        "z": -32
+      },
+      "health": 19.007999420166016,
+      "food": 10.0,
+      "inventory": [
+        {
+          "item": "porkchop",
+          "count": 17
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773277212.276822,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 50542
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 50542,
+      "position": {
+        "x": -1,
+        "y": -60,
+        "z": -32
+      },
+      "health": 19.007999420166016,
+      "food": 9.0,
+      "inventory": [
+        {
+          "item": "porkchop",
+          "count": 17
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773277253.086704,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": -47,
+        "y": -62,
+        "z": -47
+      },
+      "health": 19.007999420166016,
+      "food": 8,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 5
+        },
+        {
+          "item": "porkchop",
+          "count": 17
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773277307.986636,
+    "duration_ms": 6427.773952484131
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 50542
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 50542,
+      "position": {
+        "x": -47,
+        "y": -62,
+        "z": -47
+      },
+      "health": 19.007999420166016,
+      "food": 8.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 5
+        },
+        {
+          "item": "porkchop",
+          "count": 17
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773277977.1940758,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 50542
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 50542,
+      "position": {
+        "x": -45,
+        "y": -60,
+        "z": -50
+      },
+      "health": 18.007999420166016,
+      "food": 8.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 5
+        },
+        {
+          "item": "porkchop",
+          "count": 17
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773278403.918256,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -39,
+        "y": -60,
+        "z": -51
+      },
+      "health": 18.007999420166016,
+      "food": 8.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 5
+        },
+        {
+          "item": "porkchop",
+          "count": 17
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773278566.5503411,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "grass_block",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "grass_block",
+      "mined": 5,
+      "position": {
+        "x": -75,
+        "y": -61,
+        "z": -19
+      },
+      "health": 18.007999420166016,
+      "food": 5,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 8
+        },
+        {
+          "item": "porkchop",
+          "count": 23
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773278673.863533,
+    "duration_ms": 8257.132053375244
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 1,
+      "hits": 63,
+      "position": {
+        "x": -53,
+        "y": -60,
+        "z": -8
+      },
+      "health": 16.416000366210938,
+      "food": 4,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "item": "porkchop",
+          "count": 23
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773278716.807252,
+    "duration_ms": 15017.527103424072
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -53,
+        "y": -60,
+        "z": -8
+      },
+      "health": 16.416000366210938,
+      "food": 4.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 55
+        },
+        {
+          "item": "porkchop",
+          "count": 23
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773278786.132591,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -58,
+        "y": -60,
+        "z": -4
+      },
+      "health": 16.416000366210938,
+      "food": 3.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 55
+        },
+        {
+          "item": "porkchop",
+          "count": 23
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "stone_sword",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773279398.987947,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -64,
+        "y": -60,
+        "z": -4
+      },
+      "health": 16.416000366210938,
+      "food": 3.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 55
+        },
+        {
+          "item": "porkchop",
+          "count": 23
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "stone_sword",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773279500.719929,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -57,
+        "y": -60,
+        "z": -14
+      },
+      "health": 16.416000366210938,
+      "food": 3.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 55
+        },
+        {
+          "item": "porkchop",
+          "count": 23
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "stone_sword",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773279536.2942662,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "killed": 1,
+      "hits": 10,
+      "position": {
+        "x": -64,
+        "y": -60,
+        "z": -23
+      },
+      "health": 16.416000366210938,
+      "food": 2,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 55
+        },
+        {
+          "item": "porkchop",
+          "count": 24
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "stone_sword",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773279571.221836,
+    "duration_ms": 4279.641151428223
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 0,
+      "hits": 38,
+      "position": {
+        "x": -53,
+        "y": -60,
+        "z": -40
+      },
+      "health": 16.416000366210938,
+      "food": 1,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 55
+        },
+        {
+          "item": "porkchop",
+          "count": 24
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "stone_sword",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773279591.825601,
+    "duration_ms": 10208.92310142517
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -53,
+        "y": -60,
+        "z": -40
+      },
+      "health": 16.416000366210938,
+      "food": 1.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 55
+        },
+        {
+          "item": "porkchop",
+          "count": 24
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "stone_sword",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773279625.021796,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "killed": 1,
+      "hits": 11,
+      "position": {
+        "x": -59,
+        "y": -60,
+        "z": -50
+      },
+      "health": 16.416000366210938,
+      "food": 1,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 55
+        },
+        {
+          "item": "porkchop",
+          "count": 26
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "stone_sword",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773279645.421201,
+    "duration_ms": 3134.0010166168213
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -43,
+        "y": -60,
+        "z": -59
+      },
+      "health": 6.4160003662109375,
+      "food": 0.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 55
+        },
+        {
+          "item": "porkchop",
+          "count": 26
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "stone_sword",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773279701.932247,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -5,
+        "y": -60,
+        "z": 0
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773279761.0035079,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -9,
+        "y": -60,
+        "z": 5
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773279823.172757,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -16,
+        "y": -60,
+        "z": 11
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773279847.496145,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "killed": 1,
+      "hits": 10,
+      "position": {
+        "x": -31,
+        "y": -60,
+        "z": 12
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "porkchop",
+          "count": 3
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773279882.358628,
+    "duration_ms": 3352.973222732544
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -31,
+        "y": -60,
+        "z": 12
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "porkchop",
+          "count": 3
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773280044.570658,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -32,
+        "y": -60,
+        "z": 15
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "porkchop",
+          "count": 3
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773280074.815042,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "killed": 1,
+      "hits": 11,
+      "position": {
+        "x": -28,
+        "y": -60,
+        "z": 20
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "porkchop",
+          "count": 5
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773280118.579015,
+    "duration_ms": 2834.141969680786
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 1,
+      "hits": 51,
+      "position": {
+        "x": -16,
+        "y": -60,
+        "z": 30
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "porkchop",
+          "count": 5
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773280139.3260689,
+    "duration_ms": 11317.410945892334
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -16,
+        "y": -60,
+        "z": 30
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "porkchop",
+          "count": 5
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773281689.0859861,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "killed": 1,
+      "hits": 11,
+      "position": {
+        "x": -29,
+        "y": -60,
+        "z": -11
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "porkchop",
+          "count": 7
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773281730.82938,
+    "duration_ms": 3136.781930923462
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -30,
+        "y": -60,
+        "z": -11
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "porkchop",
+          "count": 7
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773281764.201767,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -30,
+        "y": -60,
+        "z": -11
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "porkchop",
+          "count": 7
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773282315.0143821,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": -5,
+        "y": -60,
+        "z": -19
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "porkchop",
+          "count": 7
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773283478.54773,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "killed": 1,
+      "hits": 11,
+      "position": {
+        "x": 54,
+        "y": -60,
+        "z": -94
+      },
+      "health": 20,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "porkchop",
+          "count": 8
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773283616.296426,
+    "duration_ms": 3540.6529903411865
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": 54,
+        "y": -60,
+        "z": -94
+      },
+      "health": 20.0,
+      "food": 17.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "porkchop",
+          "count": 8
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773283654.9794922,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 1,
+      "hits": 13,
+      "position": {
+        "x": 56,
+        "y": -60,
+        "z": -108
+      },
+      "health": 20,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 12
+        },
+        {
+          "item": "porkchop",
+          "count": 8
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773283669.48159,
+    "duration_ms": 7106.205940246582
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 1,
+      "hits": 26,
+      "position": {
+        "x": 15,
+        "y": -60,
+        "z": -25
+      },
+      "health": 19,
+      "food": 13,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 12
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 62
+        },
+        {
+          "item": "porkchop",
+          "count": 8
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773283708.6166751,
+    "duration_ms": 12172.81174659729
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": 15,
+        "y": -60,
+        "z": -25
+      },
+      "health": 19.0,
+      "food": 13.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 12
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 62
+        },
+        {
+          "item": "porkchop",
+          "count": 8
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773284776.753642,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": 8,
+        "y": -60,
+        "z": -8
+      },
+      "health": 18.0,
+      "food": 13.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 12
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 62
+        },
+        {
+          "item": "porkchop",
+          "count": 8
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773293789.76724,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": 7,
+        "y": -60,
+        "z": -3
+      },
+      "health": 18.0,
+      "food": 13.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 12
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 62
+        },
+        {
+          "item": "porkchop",
+          "count": 8
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773293844.435352,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 17,
+        "y": -62,
+        "z": -26
+      },
+      "health": 18,
+      "food": 7,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 16
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 62
+        },
+        {
+          "item": "porkchop",
+          "count": 24
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773293967.231065,
+    "duration_ms": 7656.896114349365
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": 17,
+        "y": -62,
+        "z": -26
+      },
+      "health": 18.0,
+      "food": 7.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 18
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 62
+        },
+        {
+          "item": "porkchop",
+          "count": 24
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773293992.3395772,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 1,
+      "hits": 48,
+      "position": {
+        "x": 22,
+        "y": -60,
+        "z": 13
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773294057.687725,
+    "duration_ms": 12616.621732711792
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 1,
+      "hits": 19,
+      "position": {
+        "x": 21,
+        "y": -60,
+        "z": -11
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "iron_sword",
+          "count": 1
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 56
+        },
+        {
+          "item": "shield",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773294089.2130592,
+    "duration_ms": 5663.635015487671
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62629
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62629,
+      "position": {
+        "x": 47,
+        "y": -60,
+        "z": -50
+      },
+      "health": 20.0,
+      "food": 19.0,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "iron_sword",
+          "count": 1
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 54
+        },
+        {
+          "item": "porkchop",
+          "count": 30
+        },
+        {
+          "item": "shield",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773294217.987235,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 41,
+        "y": -62,
+        "z": -43
+      },
+      "health": 20,
+      "food": 19,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 5
+        },
+        {
+          "item": "iron_sword",
+          "count": 1
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 54
+        },
+        {
+          "item": "porkchop",
+          "count": 30
+        },
+        {
+          "item": "shield",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773294251.817238,
+    "duration_ms": 6583.345174789429
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 41,
+        "y": -63,
+        "z": -43
+      },
+      "health": 20,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 7
+        },
+        {
+          "item": "iron_sword",
+          "count": 1
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 54
+        },
+        {
+          "item": "porkchop",
+          "count": 30
+        },
+        {
+          "item": "shield",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773294298.2642272,
+    "duration_ms": 9830.472946166992
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 1,
+      "hits": 9,
+      "position": {
+        "x": 56,
+        "y": -60,
+        "z": -42
+      },
+      "health": 20,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 5
+        },
+        {
+          "item": "iron_sword",
+          "count": 1
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 54
+        },
+        {
+          "item": "porkchop",
+          "count": 30
+        },
+        {
+          "item": "shield",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773294326.401776,
+    "duration_ms": 10815.571069717407
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 1,
+      "hits": 18,
+      "position": {
+        "x": 47,
+        "y": -60,
+        "z": -32
+      },
+      "health": 20,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 5
+        },
+        {
+          "item": "iron_sword",
+          "count": 1
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 54
+        },
+        {
+          "item": "porkchop",
+          "count": 30
+        },
+        {
+          "item": "shield",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773294472.962677,
+    "duration_ms": 4913.756370544434
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "stone",
+      "count": 20
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "stone",
+      "mined": 0,
+      "position": {
+        "x": 47,
+        "y": -60,
+        "z": -32
+      },
+      "health": 20,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "bucket",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 5
+        },
+        {
+          "item": "iron_sword",
+          "count": 1
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 54
+        },
+        {
+          "item": "porkchop",
+          "count": 30
+        },
+        {
+          "item": "shield",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773294517.400396,
+    "duration_ms": 46.710968017578125
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "grass_block",
+      "count": 40
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "grass_block",
+      "mined": 40,
+      "position": {
+        "x": 50,
+        "y": -61,
+        "z": -41
+      },
+      "health": 19,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "bucket",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 42
+        },
+        {
+          "item": "iron_sword",
+          "count": 1
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 54
+        },
+        {
+          "item": "porkchop",
+          "count": 30
+        },
+        {
+          "item": "shield",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773294632.4648829,
+    "duration_ms": 42104.09998893738
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "stone",
+      "count": 64
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "stone",
+      "mined": 0,
+      "position": {
+        "x": 56,
+        "y": -60,
+        "z": -43
+      },
+      "health": 19,
+      "food": 15,
+      "inventory": [
+        {
+          "item": "bucket",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "diamond_sword",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 1
+        },
+        {
+          "item": "iron_sword",
+          "count": 1
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 64
+        },
+        {
+          "item": "pig_spawn_egg",
+          "count": 54
+        },
+        {
+          "item": "porkchop",
+          "count": 30
+        },
+        {
+          "item": "shield",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773294733.912149,
+    "duration_ms": 44.5551872253418
   }
 ]

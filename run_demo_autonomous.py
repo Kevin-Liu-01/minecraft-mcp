@@ -32,7 +32,7 @@ async def main() -> None:
     loop_runner = AutonomousLoop(
         mcp_url=MCP_URL,
         run_agent_fn=run_agent,
-        model=os.environ.get("DEDALUS_MODEL", "openai/gpt-4o-mini"),
+        model=os.environ.get("DEDALUS_MODEL", "openai/gpt-5-nano-mini"),
         cycle_delay=5.0,
         max_steps_per_cycle=25,
         verbose=True,

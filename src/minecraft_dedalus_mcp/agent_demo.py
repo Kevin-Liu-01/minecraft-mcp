@@ -450,7 +450,7 @@ async def run_agent(
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run a Dedalus agent against the Minecraft MCP server")
     parser.add_argument("--server-url", default="http://127.0.0.1:8000/mcp")
-    parser.add_argument("--model", default=os.environ.get("DEDALUS_MODEL", "openai/gpt-4o-mini"))
+    parser.add_argument("--model", default=os.environ.get("DEDALUS_MODEL", "openai/gpt-5-nano-mini"))
     parser.add_argument("--max-steps", type=int, default=12)
     parser.add_argument(
         "--goal",

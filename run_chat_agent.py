@@ -265,7 +265,7 @@ async def _run_agent_task(
     try:
         status = await run_agent(
             server_url=server_url,
-            model=os.environ.get("DEDALUS_MODEL", "openai/gpt-4o-mini"),
+            model=os.environ.get("DEDALUS_MODEL", "openai/gpt-5-nano-mini"),
             goal=goal,
             max_steps=25,
             verbose=True,
@@ -331,7 +331,7 @@ async def main_async(
         autonomous_loop = AutonomousLoop(
             mcp_url=mcp_url,
             run_agent_fn=run_agent,
-            model=os.environ.get("DEDALUS_MODEL", "openai/gpt-4o-mini"),
+            model=os.environ.get("DEDALUS_MODEL", "openai/gpt-5-nano-mini"),
             cycle_delay=5.0,
             max_steps_per_cycle=25,
             verbose=True,
