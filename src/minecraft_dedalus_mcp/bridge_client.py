@@ -12,7 +12,7 @@ class BridgeError(RuntimeError):
 
 
 class BridgeClient:
-    def __init__(self, base_url: str, timeout: float = 30.0) -> None:
+    def __init__(self, base_url: str, timeout: float = 120.0) -> None:
         self.base_url = base_url.rstrip("/")
         self._client = httpx.AsyncClient(base_url=self.base_url, timeout=timeout)
 
@@ -82,11 +82,23 @@ class BridgeClient:
     async def attack_entity(self, *, name: str, count: int) -> dict[str, Any]:
         return await self._request("POST", "/actions/attack_entity", json={"name": name, "count": count})
 
+    async def go_to_player(self, *, name: str) -> dict[str, Any]:
+        return await self._request("POST", "/actions/go_to_player", json={"name": name})
+
+    async def go_to_entity(self, *, name: str = "") -> dict[str, Any]:
+        return await self._request("POST", "/actions/go_to_entity", json={"name": name})
+
     async def send_chat(self, *, message: str) -> dict[str, Any]:
         return await self._request("POST", "/actions/send_chat", json={"message": message})
 
     async def read_chat(self, *, limit: int) -> dict[str, Any]:
         return await self._request("GET", "/chat/messages", params={"limit": limit})
+
+    async def find_players(self) -> dict[str, Any]:
+        return await self._request("GET", "/players")
+
+    async def find_entities(self, *, radius: int = 32) -> dict[str, Any]:
+        return await self._request("GET", "/entities", params={"radius": radius})
 
     async def build_structure(
         self,
@@ -114,6 +126,24 @@ class BridgeClient:
                 "height": height,
             },
         )
+
+    async def build_quick(
+        self,
+        *,
+        shape: str,
+        material: str = "",
+        height: int | None = None,
+        width: int | None = None,
+        length: int | None = None,
+        radius: int | None = None,
+    ) -> dict[str, Any]:
+        payload: dict[str, Any] = {"shape": shape}
+        if material: payload["material"] = material
+        if height is not None: payload["height"] = height
+        if width is not None: payload["width"] = width
+        if length is not None: payload["length"] = length
+        if radius is not None: payload["radius"] = radius
+        return await self._request("POST", "/actions/build_quick", json=payload)
 
     async def get_block_at(self, *, x: int, y: int, z: int) -> dict[str, Any]:
         return await self._request("POST", "/actions/get_block_at", json={"x": x, "y": y, "z": z})
@@ -167,6 +197,58 @@ class BridgeClient:
 
     async def stop_movement(self) -> dict[str, Any]:
         return await self._request("POST", "/actions/stop_movement", json={})
+
+    async def smelt_item(self, *, item: str, count: int = 1, fuel: str = "coal") -> dict[str, Any]:
+        return await self._request(
+            "POST", "/actions/smelt_item", json={"item": item, "count": count, "fuel": fuel}
+        )
+
+    async def run_command(self, *, command: str) -> dict[str, Any]:
+        return await self._request("POST", "/actions/run_command", json={"command": command})
+
+    async def build_blueprint(self, *, blocks: list[dict[str, Any]]) -> dict[str, Any]:
+        return await self._request("POST", "/actions/build_blueprint", json={"blocks": blocks})
+
+    async def hunt(self, *, name: str = "", count: int = 5, radius: int = 48) -> dict[str, Any]:
+        return await self._request("POST", "/actions/hunt", json={"name": name, "count": count, "radius": radius})
+
+    async def gather_wood(self, *, count: int = 16, type: str = "") -> dict[str, Any]:
+        return await self._request("POST", "/actions/gather_wood", json={"count": count, "type": type})
+
+    async def clear_area(self, *, radius: int = 3, depth: int = 1) -> dict[str, Any]:
+        return await self._request("POST", "/actions/clear_area", json={"radius": radius, "depth": depth})
+
+    async def follow_player(self, *, name: str, duration_seconds: int = 30) -> dict[str, Any]:
+        return await self._request("POST", "/actions/follow_player", json={"name": name, "duration_seconds": duration_seconds})
+
+    async def defend_area(self, *, radius: int = 10, duration_seconds: int = 60) -> dict[str, Any]:
+        return await self._request("POST", "/actions/defend_area", json={"radius": radius, "duration_seconds": duration_seconds})
+
+    async def store_items(self, *, item: str = "", chest_x: int | None = None, chest_y: int | None = None, chest_z: int | None = None) -> dict[str, Any]:
+        payload: dict[str, Any] = {"item": item}
+        if chest_x is not None: payload["chest_x"] = chest_x
+        if chest_y is not None: payload["chest_y"] = chest_y
+        if chest_z is not None: payload["chest_z"] = chest_z
+        return await self._request("POST", "/actions/store_items", json=payload)
+
+    async def retrieve_items(self, *, item: str, count: int = 64, chest_x: int | None = None, chest_y: int | None = None, chest_z: int | None = None) -> dict[str, Any]:
+        payload: dict[str, Any] = {"item": item, "count": count}
+        if chest_x is not None: payload["chest_x"] = chest_x
+        if chest_y is not None: payload["chest_y"] = chest_y
+        if chest_z is not None: payload["chest_z"] = chest_z
+        return await self._request("POST", "/actions/retrieve_items", json=payload)
+
+    async def plant_crops(self, *, seed: str = "wheat_seeds", rows: int = 3, cols: int = 3) -> dict[str, Any]:
+        return await self._request("POST", "/actions/plant_crops", json={"seed": seed, "rows": rows, "cols": cols})
+
+    async def harvest_crops(self, *, radius: int = 6) -> dict[str, Any]:
+        return await self._request("POST", "/actions/harvest_crops", json={"radius": radius})
+
+    async def make_tools(self, *, material: str = "") -> dict[str, Any]:
+        return await self._request("POST", "/actions/make_tools", json={"material": material})
+
+    async def smelt_all(self, *, item: str, fuel: str = "coal") -> dict[str, Any]:
+        return await self._request("POST", "/actions/smelt_all", json={"item": item, "fuel": fuel})
 
     async def _request(
         self,

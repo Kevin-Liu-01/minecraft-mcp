@@ -4,9 +4,13 @@ from __future__ import annotations
 
 import asyncio
 import json
+import logging
 import os
 
 from dedalus_mcp.client import MCPClient
+
+logging.getLogger("httpx").setLevel(logging.WARNING)
+logging.getLogger("mcp").setLevel(logging.WARNING)
 
 MCP_URL = os.environ.get("MCP_SERVER_URL", "http://127.0.0.1:8000/mcp")
 MAX_ATTACKS = 120  # safety limit

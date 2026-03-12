@@ -1,0 +1,10087 @@
+[
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 52098
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 52098,
+      "position": {
+        "x": -5,
+        "y": 104,
+        "z": 30
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [],
+      "entities": [],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773262357.2551942,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 52098
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 52098,
+      "position": {
+        "x": -7,
+        "y": 103,
+        "z": 24
+      },
+      "health": 15.5,
+      "food": 17.0,
+      "inventory": [],
+      "entities": [],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773262694.483594,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 52098
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 52098,
+      "position": {
+        "x": -8,
+        "y": 103,
+        "z": 25
+      },
+      "health": 14.5,
+      "food": 17.0,
+      "inventory": [],
+      "entities": [],
+      "chat_backlog": 6
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773262756.933227,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 52098
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 52098,
+      "position": {
+        "x": -8,
+        "y": 103,
+        "z": 25
+      },
+      "health": 14.5,
+      "food": 17.0,
+      "inventory": [],
+      "entities": [],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773262837.388848,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": -8,
+      "y": 102,
+      "z": 25
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": -8,
+        "y": 102,
+        "z": 25
+      },
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773262930.7769809,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "spruce_log",
+      "count": 10
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "spruce_log",
+      "mined": 0,
+      "inventory": [
+        {
+          "item": "oak_log",
+          "count": 4
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263039.704726,
+    "duration_ms": 1030.1120281219482
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 52098
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 52098,
+      "position": {
+        "x": -20,
+        "y": 101,
+        "z": 34
+      },
+      "health": 7.5,
+      "food": 15.0,
+      "inventory": [
+        {
+          "item": "birch_log",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 10
+        },
+        {
+          "item": "stick",
+          "count": 2
+        }
+      ],
+      "entities": [],
+      "chat_backlog": 38
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263214.7882218,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "build_from_description",
+    "args": {
+      "description": "a simple 1x1 oak_log pillar 8 blocks tall"
+    },
+    "result": {
+      "action": "build_blueprint",
+      "blocks_placed": 0,
+      "blocks_requested": 4,
+      "inventory": [
+        {
+          "item": "birch_log",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 10
+        },
+        {
+          "item": "red_mushroom",
+          "count": 4
+        },
+        {
+          "item": "stick",
+          "count": 2
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263279.7387881,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": -20,
+      "y": 101,
+      "z": 34
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 52098,
+      "position": {
+        "x": -19,
+        "y": 101,
+        "z": 34
+      },
+      "health": 0.5,
+      "food": 15,
+      "inventory": [
+        {
+          "item": "birch_log",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 9
+        },
+        {
+          "item": "red_mushroom",
+          "count": 4
+        },
+        {
+          "item": "stick",
+          "count": 2
+        }
+      ],
+      "entities": [
+        {
+          "name": "chest_minecart",
+          "kind": "other",
+          "x": 3,
+          "y": -2,
+          "z": 47
+        },
+        {
+          "name": "chest_minecart",
+          "kind": "other",
+          "x": 0,
+          "y": 2,
+          "z": 46
+        },
+        {
+          "name": "chest_minecart",
+          "kind": "other",
+          "x": 12,
+          "y": 2,
+          "z": 50
+        },
+        {
+          "name": "chest_minecart",
+          "kind": "other",
+          "x": 14,
+          "y": -2,
+          "z": 27
+        },
+        {
+          "name": "chest_minecart",
+          "kind": "other",
+          "x": -20,
+          "y": -11,
+          "z": 43
+        },
+        {
+          "name": "chest_minecart",
+          "kind": "other",
+          "x": -51,
+          "y": -5,
+          "z": 85
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 53,
+          "y": 70,
+          "z": 141
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": -65,
+          "y": 66,
+          "z": -73
+        }
+      ],
+      "chat_backlog": 48
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263369.944232,
+    "duration_ms": 35.44497489929199
+  },
+  {
+    "tool_name": "place_block",
+    "args": {
+      "block": "oak_log",
+      "x": -20,
+      "y": 101,
+      "z": 33
+    },
+    "result": {
+      "action": "place_block",
+      "block": "oak_log",
+      "position": {
+        "x": -20,
+        "y": 101,
+        "z": 33
+      },
+      "inventory": [
+        {
+          "item": "birch_log",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 9
+        },
+        {
+          "item": "red_mushroom",
+          "count": 4
+        },
+        {
+          "item": "stick",
+          "count": 2
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263430.593565,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "build_structure",
+    "args": {
+      "preset": "pillar",
+      "material": "dark_oak_log"
+    },
+    "result": {
+      "action": "build_structure",
+      "preset": "pillar",
+      "material": "dark_oak_log",
+      "blocks_placed": 4,
+      "inventory": [
+        {
+          "item": "dark_oak_log",
+          "count": 3
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263555.325464,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 52098
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 52098,
+      "position": {
+        "x": 3,
+        "y": 113,
+        "z": 28
+      },
+      "health": 17.5,
+      "food": 17.0,
+      "inventory": [
+        {
+          "item": "dark_oak_log",
+          "count": 2
+        }
+      ],
+      "entities": [],
+      "chat_backlog": 95
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263715.345532,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 52098
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 52098,
+      "position": {
+        "x": 3,
+        "y": 113,
+        "z": 28
+      },
+      "health": 17.5,
+      "food": 17.0,
+      "inventory": [
+        {
+          "item": "dark_oak_log",
+          "count": 2
+        }
+      ],
+      "entities": [],
+      "chat_backlog": 100
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263768.092629,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 52098
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 52098,
+      "position": {
+        "x": 3,
+        "y": 113,
+        "z": 28
+      },
+      "health": 17.5,
+      "food": 17.0,
+      "inventory": [
+        {
+          "item": "dark_oak_log",
+          "count": 2
+        }
+      ],
+      "entities": [],
+      "chat_backlog": 100
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263781.395932,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 3,
+      "y": 113,
+      "z": 28
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 52098,
+      "position": {
+        "x": 3,
+        "y": 113,
+        "z": 28
+      },
+      "health": 17.5,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dark_oak_log",
+          "count": 3
+        }
+      ],
+      "entities": [
+        {
+          "name": "chest_minecart",
+          "kind": "other",
+          "x": 3,
+          "y": -2,
+          "z": 47
+        },
+        {
+          "name": "chest_minecart",
+          "kind": "other",
+          "x": 0,
+          "y": 2,
+          "z": 46
+        },
+        {
+          "name": "chest_minecart",
+          "kind": "other",
+          "x": 12,
+          "y": 2,
+          "z": 50
+        },
+        {
+          "name": "chest_minecart",
+          "kind": "other",
+          "x": 14,
+          "y": -2,
+          "z": 27
+        },
+        {
+          "name": "chest_minecart",
+          "kind": "other",
+          "x": -20,
+          "y": -11,
+          "z": 43
+        },
+        {
+          "name": "chest_minecart",
+          "kind": "other",
+          "x": -51,
+          "y": -5,
+          "z": 85
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 53,
+          "y": 70,
+          "z": 141
+        },
+        {
+          "name": "chest_minecart",
+          "kind": "other",
+          "x": 96,
+          "y": 22,
+          "z": -45
+        }
+      ],
+      "chat_backlog": 100
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263804.478543,
+    "duration_ms": 1127.1231174468994
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 52098
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 52098,
+      "position": {
+        "x": 3,
+        "y": 113,
+        "z": 28
+      },
+      "health": 17.5,
+      "food": 17.0,
+      "inventory": [
+        {
+          "item": "dark_oak_log",
+          "count": 3
+        }
+      ],
+      "entities": [],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263830.064982,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 52098
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 52098,
+      "position": {
+        "x": -3,
+        "y": 83,
+        "z": 76
+      },
+      "health": 17.5,
+      "food": 16.0,
+      "inventory": [
+        {
+          "item": "dark_oak_log",
+          "count": 3
+        }
+      ],
+      "entities": [],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263892.555902,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "player",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "defeated": 1,
+      "inventory": [
+        {
+          "item": "dark_oak_log",
+          "count": 3
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263980.475777,
+    "duration_ms": 597.2511768341064
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "player",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "defeated": 1,
+      "inventory": [
+        {
+          "item": "dark_oak_log",
+          "count": 3
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773263981.082714,
+    "duration_ms": 228.59477996826172
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 52098
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 52098,
+      "position": {
+        "x": -11,
+        "y": 42,
+        "z": 78
+      },
+      "health": 14.5,
+      "food": 14.0,
+      "inventory": [
+        {
+          "item": "dark_oak_log",
+          "count": 3
+        },
+        {
+          "item": "dirt",
+          "count": 5
+        },
+        {
+          "item": "flint",
+          "count": 1
+        },
+        {
+          "item": "gravel",
+          "count": 4
+        }
+      ],
+      "entities": [],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264349.503366,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 19,
+        "y": 71,
+        "z": -32
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [],
+      "entities": [],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264493.606144,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 18,
+      "y": 69,
+      "z": -31
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 18,
+        "y": 69,
+        "z": -31
+      },
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264533.782634,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 19,
+      "y": 69,
+      "z": -31
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 19,
+        "y": 69,
+        "z": -31
+      },
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264535.608861,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 20,
+      "y": 69,
+      "z": -31
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 20,
+        "y": 69,
+        "z": -31
+      },
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264536.7227788,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 20,
+      "y": 69,
+      "z": -32
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 20,
+        "y": 69,
+        "z": -32
+      },
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264539.4942029,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 18,
+      "y": 69,
+      "z": -32
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 18,
+        "y": 69,
+        "z": -32
+      },
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264540.710607,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264545.763205,
+    "duration_ms": 4894.423007965088
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 16,
+      "y": 68,
+      "z": -30
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 16,
+        "y": 68,
+        "z": -30
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264572.568168,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 20
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264581.909467,
+    "duration_ms": 6852.992057800293
+  },
+  {
+    "tool_name": "build_from_description",
+    "args": {
+      "description": "a 5 block tall tower"
+    },
+    "result": {
+      "action": "build_blueprint",
+      "blocks_placed": 0,
+      "blocks_requested": 50,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 21
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264601.992872,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "build_from_description",
+    "args": {
+      "description": "a 5 block tall tower"
+    },
+    "result": {
+      "action": "build_blueprint",
+      "blocks_placed": 0,
+      "blocks_requested": 50,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 21
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264603.5488489,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "build_from_description",
+    "args": {
+      "description": "a 5 block tall tower"
+    },
+    "result": {
+      "action": "build_blueprint",
+      "blocks_placed": 0,
+      "blocks_requested": 50,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 21
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264604.575146,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "cobblestone",
+      "count": 50
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "cobblestone",
+      "mined": 0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 21
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264607.0402071,
+    "duration_ms": 37.187814712524414
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "cobblestone",
+      "count": 50
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "cobblestone",
+      "mined": 0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 24
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264612.42056,
+    "duration_ms": 34.18421745300293
+  },
+  {
+    "tool_name": "place_block",
+    "args": {
+      "block": "dirt",
+      "x": 17,
+      "y": 70,
+      "z": -31
+    },
+    "result": {
+      "action": "place_block",
+      "block": "dirt",
+      "position": {
+        "x": 17,
+        "y": 70,
+        "z": -31
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 28
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264614.684907,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 1
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 1,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 27
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264618.260407,
+    "duration_ms": 784.1699123382568
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "cobblestone",
+      "count": 50
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "cobblestone",
+      "mined": 0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 28
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264622.71068,
+    "duration_ms": 37.49704360961914
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "cobblestone",
+      "count": 50
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "cobblestone",
+      "mined": 0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 30
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264637.700927,
+    "duration_ms": 31.746625900268555
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 19,
+      "y": 69,
+      "z": -31
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 19,
+        "y": 69,
+        "z": -31
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 27
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 27
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 50
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264665.211203,
+    "duration_ms": 410.8390808105469
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 17,
+      "y": 69,
+      "z": -31
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 17,
+        "y": 69,
+        "z": -32
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 27
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 27
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 52
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264668.6965408,
+    "duration_ms": 46.79512977600098
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 17,
+      "y": 67,
+      "z": -31
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 17,
+        "y": 68,
+        "z": -31
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 27
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 27
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 52
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264671.683064,
+    "duration_ms": 1085.8511924743652
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 17,
+      "y": 67,
+      "z": -31
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "stone",
+      "position": {
+        "x": 17,
+        "y": 67,
+        "z": -31
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 25
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264681.112884,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 17,
+        "y": 68,
+        "z": -31
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        }
+      ],
+      "entities": [],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264826.3933618,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 17,
+        "y": 68,
+        "z": -31
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        }
+      ],
+      "entities": [],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264857.04074,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 18,
+      "y": 69,
+      "z": -32
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 18,
+        "y": 69,
+        "z": -32
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264978.052089,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 18,
+      "y": 69,
+      "z": -31
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 18,
+        "y": 69,
+        "z": -31
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 5
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264980.3802571,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 18,
+      "y": 68,
+      "z": -32
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 18,
+        "y": 68,
+        "z": -32
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 6
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264983.0096588,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 16,
+      "y": 69,
+      "z": -30
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 16,
+        "y": 69,
+        "z": -30
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 7
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264984.5344262,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 16,
+      "y": 69,
+      "z": -32
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 16,
+        "y": 69,
+        "z": -32
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 8
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264987.467277,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 17,
+      "y": 68,
+      "z": -32
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 17,
+        "y": 68,
+        "z": -32
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 8
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264988.5827289,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 16,
+      "y": 68,
+      "z": -31
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 16,
+        "y": 68,
+        "z": -31
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 9
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264991.363295,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 16,
+      "y": 69,
+      "z": -31
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 16,
+        "y": 69,
+        "z": -31
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 10
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264993.136767,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 16,
+      "y": 68,
+      "z": -32
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 16,
+        "y": 68,
+        "z": -32
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 12
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773264996.580863,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 18,
+      "y": 68,
+      "z": -30
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 18,
+        "y": 68,
+        "z": -30
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 13
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265003.8192158,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 17,
+      "y": 68,
+      "z": -30
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 17,
+        "y": 68,
+        "z": -30
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 13
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265006.792005,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 16,
+      "y": 68,
+      "z": -30
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 16,
+        "y": 68,
+        "z": -30
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 14
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265023.159372,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 18,
+      "y": 68,
+      "z": -31
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "position": {
+        "x": 18,
+        "y": 68,
+        "z": -31
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265028.357633,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 10
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 10,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 21
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265057.038208,
+    "duration_ms": 8381.475925445557
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 19,
+      "y": 68,
+      "z": -32
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 19,
+        "y": 68,
+        "z": -32
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 21
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265060.19554,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 18,
+        "y": 68,
+        "z": -31
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 22
+        }
+      ],
+      "entities": [],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265068.5860548,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "build_from_description",
+    "args": {
+      "description": "a tower"
+    },
+    "result": {
+      "action": "build_blueprint",
+      "blocks_placed": 0,
+      "blocks_requested": 50,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 22
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265108.016068,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "build_from_description",
+    "args": {
+      "description": "a pp tower"
+    },
+    "result": {
+      "action": "build_blueprint",
+      "blocks_placed": 0,
+      "blocks_requested": 50,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 22
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265110.711725,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 17,
+      "y": 67,
+      "z": -31
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 17,
+        "y": 67,
+        "z": -31
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "ink_sac",
+          "count": 3
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265133.444201,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 13,
+      "y": 68,
+      "z": -31
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "oak_leaves",
+      "position": {
+        "x": 13,
+        "y": 68,
+        "z": -31
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 17
+        },
+        {
+          "item": "ink_sac",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265159.236264,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 10,
+      "y": 67,
+      "z": -33
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "oak_leaves",
+      "position": {
+        "x": 10,
+        "y": 67,
+        "z": -33
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 16
+        },
+        {
+          "item": "ink_sac",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 2
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265183.5331562,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 11,
+      "y": 67,
+      "z": -34
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "oak_leaves",
+      "position": {
+        "x": 11,
+        "y": 67,
+        "z": -34
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 16
+        },
+        {
+          "item": "ink_sac",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 2
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265186.45843,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 13,
+        "y": 69,
+        "z": -29
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        },
+        {
+          "item": "ink_sac",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 2
+        }
+      ],
+      "entities": [],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265434.740499,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 16,
+      "y": 71,
+      "z": -27
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 16,
+        "y": 71,
+        "z": -28
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        },
+        {
+          "item": "ink_sac",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 2
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 27
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 8
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265486.0348852,
+    "duration_ms": 1252.1281242370605
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 16,
+      "y": 71,
+      "z": -27
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 16,
+        "y": 71,
+        "z": -28
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        },
+        {
+          "item": "ink_sac",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 2
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 27
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 12
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265498.115455,
+    "duration_ms": 19.035816192626953
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 16,
+        "y": 71,
+        "z": -30
+      },
+      "health": 20.0,
+      "food": 17.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        },
+        {
+          "item": "ink_sac",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 2
+        }
+      ],
+      "entities": [],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265639.722389,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 16,
+        "y": 71,
+        "z": -30
+      },
+      "health": 20.0,
+      "food": 17.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        },
+        {
+          "item": "ink_sac",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 2
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265762.552481,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "player",
+      "count": 3
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "defeated": 3,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        },
+        {
+          "item": "ink_sac",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 2
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265779.586895,
+    "duration_ms": 601.093053817749
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 17,
+      "y": 71,
+      "z": -25
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 17,
+        "y": 71,
+        "z": -26
+      },
+      "health": 20,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        },
+        {
+          "item": "ink_sac",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 2
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 16
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265795.8725362,
+    "duration_ms": 464.07604217529297
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 17,
+      "y": 71,
+      "z": -25
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 17,
+        "y": 71,
+        "z": -26
+      },
+      "health": 20,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        },
+        {
+          "item": "ink_sac",
+          "count": 3
+        },
+        {
+          "item": "oak_log",
+          "count": 2
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 16
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265795.9224372,
+    "duration_ms": 42.428016662597656
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 17,
+        "y": 71,
+        "z": -26
+      },
+      "health": 20.0,
+      "food": 17.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 3
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 24
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265807.983807,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 19,
+      "y": 70,
+      "z": -28
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 19,
+        "y": 70,
+        "z": -28
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 3
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265854.5948532,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 18,
+      "y": 70,
+      "z": -27
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 18,
+        "y": 70,
+        "z": -27
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 3
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265857.020753,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 16,
+      "y": 70,
+      "z": -28
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 16,
+        "y": 70,
+        "z": -28
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 5
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265864.976813,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 18,
+      "y": 70,
+      "z": -29
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 18,
+        "y": 70,
+        "z": -29
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 5
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265867.337505,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 17,
+      "y": 70,
+      "z": -28
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 17,
+        "y": 70,
+        "z": -28
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 5
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265871.688401,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 17,
+      "y": 70,
+      "z": -27
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 17,
+        "y": 70,
+        "z": -27
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265874.576643,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 18,
+      "y": 70,
+      "z": -26
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 18,
+        "y": 70,
+        "z": -26
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 5
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265875.6882172,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 18,
+      "y": 70,
+      "z": -28
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 18,
+        "y": 70,
+        "z": -28
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 6
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265876.854068,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 20,
+      "y": 70,
+      "z": -28
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 20,
+        "y": 70,
+        "z": -28
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 7
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265880.385781,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 19,
+      "y": 70,
+      "z": -27
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 19,
+        "y": 70,
+        "z": -27
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 7
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265881.2934232,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 20,
+      "y": 70,
+      "z": -27
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 20,
+        "y": 70,
+        "z": -27
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265883.625063,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 19,
+      "y": 70,
+      "z": -26
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 19,
+        "y": 70,
+        "z": -26
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265885.1971378,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 19,
+      "y": 70,
+      "z": -29
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 19,
+        "y": 70,
+        "z": -29
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 10
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265888.038342,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 20,
+      "y": 70,
+      "z": -29
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 20,
+        "y": 70,
+        "z": -29
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 10
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265892.592896,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 18,
+      "y": 70,
+      "z": -30
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 18,
+        "y": 70,
+        "z": -30
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 10
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265894.110332,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 19,
+      "y": 70,
+      "z": -30
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 19,
+        "y": 70,
+        "z": -30
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 11
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265896.183362,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 16,
+      "y": 70,
+      "z": -30
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 16,
+        "y": 70,
+        "z": -30
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 11
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265907.995142,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 20,
+      "y": 70,
+      "z": -30
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "position": {
+        "x": 20,
+        "y": 70,
+        "z": -30
+      },
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 13
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265916.136503,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "player",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "defeated": 1,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 14
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265948.046165,
+    "duration_ms": 279.44397926330566
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 18,
+      "y": 70,
+      "z": -27
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 18,
+        "y": 70,
+        "z": -27
+      },
+      "health": 19,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 50
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265949.3118248,
+    "duration_ms": 227.09012031555176
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 17,
+      "y": 71,
+      "z": -26
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 16,
+        "y": 71,
+        "z": -26
+      },
+      "health": 19,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 52
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265955.6878772,
+    "duration_ms": 880.6960582733154
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 17,
+      "y": 71,
+      "z": -26
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 16,
+        "y": 71,
+        "z": -26
+      },
+      "health": 19,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 56
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265959.585184,
+    "duration_ms": 30.48396110534668
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 17,
+      "y": 71,
+      "z": -26
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 16,
+        "y": 71,
+        "z": -26
+      },
+      "health": 19,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 56
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265963.0236301,
+    "duration_ms": 33.42795372009277
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 18,
+      "y": 70,
+      "z": -27
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 17,
+        "y": 70,
+        "z": -27
+      },
+      "health": 19,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 56
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265967.062538,
+    "duration_ms": 332.0651054382324
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 16,
+      "y": 71,
+      "z": -26
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 16,
+        "y": 71,
+        "z": -26
+      },
+      "health": 19,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 56
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265970.804928,
+    "duration_ms": 530.322790145874
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 17,
+      "y": 71,
+      "z": -26
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 16,
+        "y": 71,
+        "z": -26
+      },
+      "health": 19,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 56
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265973.290901,
+    "duration_ms": 40.077924728393555
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 17,
+      "y": 71,
+      "z": -26
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 16,
+        "y": 71,
+        "z": -26
+      },
+      "health": 19,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 56
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265976.778005,
+    "duration_ms": 18.121957778930664
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 17,
+      "y": 71,
+      "z": -26
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 16,
+        "y": 71,
+        "z": -26
+      },
+      "health": 19,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 56
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265978.851273,
+    "duration_ms": 51.00607872009277
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 17,
+      "y": 71,
+      "z": -26
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 16,
+        "y": 71,
+        "z": -26
+      },
+      "health": 19,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 56
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265982.2249799,
+    "duration_ms": 48.78377914428711
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 19,
+      "y": 71,
+      "z": -25
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 18,
+        "y": 71,
+        "z": -25
+      },
+      "health": 19,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 17
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 72,
+          "z": 18
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 62,
+          "y": 87,
+          "z": -65
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 58,
+          "y": 87,
+          "z": -58
+        }
+      ],
+      "chat_backlog": 56
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265986.176332,
+    "duration_ms": 491.13917350769043
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 18,
+        "y": 71,
+        "z": -25
+      },
+      "health": 19.0,
+      "food": 16.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "ink_sac",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773265998.45169,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 5
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "0rad",
+      "defeated": 5,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773266852.190327,
+    "duration_ms": 822.5150108337402
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "0rad",
+      "defeated": 1,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773266852.290962,
+    "duration_ms": 8.40902328491211
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "0rad",
+      "defeated": 1,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773266859.0039418,
+    "duration_ms": 45.539140701293945
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 5
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "0rad",
+      "defeated": 5,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773266866.171351,
+    "duration_ms": 3243.7469959259033
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "0rad",
+      "defeated": 1,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773266902.571645,
+    "duration_ms": 436.46907806396484
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 100
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "0rad",
+      "defeated": 18,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773266907.744162,
+    "duration_ms": 2690.7811164855957
+  },
+  {
+    "tool_name": "create_plan",
+    "args": {
+      "goal": "Build a 10 block tall tower"
+    },
+    "result": {
+      "plan_id": "894f6640d9fb"
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773266951.458831,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "create_plan",
+    "args": {
+      "goal": "Build a 10 block tall tower"
+    },
+    "result": {
+      "plan_id": "68fdcf3c49d1"
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773266953.438739,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "create_plan",
+    "args": {
+      "goal": "Build a 10 block tall tower"
+    },
+    "result": {
+      "plan_id": "5324046dca63"
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773266954.421727,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "build_from_description",
+    "args": {
+      "description": "a 1x1 tower 10 blocks tall"
+    },
+    "result": {
+      "action": "build_blueprint",
+      "blocks_placed": 1,
+      "blocks_requested": 50,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773266974.618709,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 10
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 10,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 11
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773266992.3570602,
+    "duration_ms": 17657.079696655273
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 33,
+        "y": 68,
+        "z": -53
+      },
+      "health": 16.0,
+      "food": 17.0,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268156.892268,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "0rad",
+      "defeated": 1,
+      "position": {
+        "x": 39,
+        "y": 69,
+        "z": -49
+      },
+      "health": 16,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268196.146435,
+    "duration_ms": 30.090808868408203
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "0rad",
+      "defeated": 1,
+      "position": {
+        "x": 38,
+        "y": 69,
+        "z": -51
+      },
+      "health": 16,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268198.973589,
+    "duration_ms": 211.14492416381836
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "0rad",
+      "defeated": 1,
+      "position": {
+        "x": 37,
+        "y": 68,
+        "z": -52
+      },
+      "health": 16,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268200.495629,
+    "duration_ms": 24.152040481567383
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "0rad",
+      "defeated": 1,
+      "position": {
+        "x": 36,
+        "y": 68,
+        "z": -52
+      },
+      "health": 16,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268200.999509,
+    "duration_ms": 161.2088680267334
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 37,
+        "y": 68,
+        "z": -53
+      },
+      "health": 14.5,
+      "food": 16.0,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268244.1673012,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 38,
+      "y": 75,
+      "z": 19
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 38,
+        "y": 75,
+        "z": 18
+      },
+      "health": 14.5,
+      "food": 13,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 35,
+          "y": 68,
+          "z": 13
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 21
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 37,
+          "y": 73,
+          "z": 20
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 75,
+          "z": 19
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 68,
+          "y": 88,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 67,
+          "y": 87,
+          "z": -68
+        }
+      ],
+      "chat_backlog": 16
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268311.108244,
+    "duration_ms": 846.1387157440186
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 38,
+        "y": 75,
+        "z": 18
+      },
+      "health": 14.5,
+      "food": 13,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268313.7007139,
+    "duration_ms": 35.50577163696289
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 38,
+        "y": 75,
+        "z": 19
+      },
+      "health": 14.5,
+      "food": 13,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268315.1735702,
+    "duration_ms": 222.0590114593506
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 38,
+        "y": 72,
+        "z": 14
+      },
+      "health": 14.5,
+      "food": 13,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268326.683763,
+    "duration_ms": 1403.3162593841553
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 38,
+        "y": 72,
+        "z": 14
+      },
+      "health": 14.5,
+      "food": 12,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268328.014215,
+    "duration_ms": 68.5276985168457
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 38,
+        "y": 72,
+        "z": 14
+      },
+      "health": 14.5,
+      "food": 12,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268328.3113742,
+    "duration_ms": 26.742935180664062
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 38,
+        "y": 72,
+        "z": 14
+      },
+      "health": 14.5,
+      "food": 12,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268330.493054,
+    "duration_ms": 34.86275672912598
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 38,
+        "y": 72,
+        "z": 14
+      },
+      "health": 14.5,
+      "food": 12,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268400.7908769,
+    "duration_ms": 57.14988708496094
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 38,
+        "y": 71,
+        "z": 13
+      },
+      "health": 14.5,
+      "food": 12,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268403.19955,
+    "duration_ms": 576.4470100402832
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 37,
+        "y": 70,
+        "z": 14
+      },
+      "health": 14.5,
+      "food": 12,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268403.7518039,
+    "duration_ms": 464.2469882965088
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 39,
+      "y": 72,
+      "z": 13
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 39,
+        "y": 72,
+        "z": 13
+      },
+      "health": 14.5,
+      "food": 12,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 35,
+          "y": 62,
+          "z": 5
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 30,
+          "y": 68,
+          "z": 13
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 40,
+          "y": 83,
+          "z": -9
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 40,
+          "y": 82,
+          "z": -8
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 68,
+          "y": 88,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 67,
+          "y": 87,
+          "z": -68
+        }
+      ],
+      "chat_backlog": 50
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268404.9699578,
+    "duration_ms": 970.905065536499
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 35,
+        "y": 68,
+        "z": 12
+      },
+      "health": 14.5,
+      "food": 12,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268408.2710268,
+    "duration_ms": 1456.775188446045
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 5
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 5,
+      "position": {
+        "x": 34,
+        "y": 69,
+        "z": 18
+      },
+      "health": 14.5,
+      "food": 12,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268425.7955542,
+    "duration_ms": 228.11007499694824
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 35,
+        "y": 71,
+        "z": 22
+      },
+      "health": 14.5,
+      "food": 12,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268431.789867,
+    "duration_ms": 1264.5692825317383
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 36,
+        "y": 61,
+        "z": 5
+      },
+      "health": 14.5,
+      "food": 11,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268448.7352462,
+    "duration_ms": 4290.448188781738
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 37,
+        "y": 62,
+        "z": 4
+      },
+      "health": 14.5,
+      "food": 11,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268454.543042,
+    "duration_ms": 3604.76016998291
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 37,
+        "y": 61,
+        "z": 4
+      },
+      "health": 14.5,
+      "food": 11,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268456.841213,
+    "duration_ms": 23.13399314880371
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "pig",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 36,
+        "y": 62,
+        "z": 3
+      },
+      "health": 14.5,
+      "food": 11,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268462.760759,
+    "duration_ms": 3609.158992767334
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 35,
+      "y": 68,
+      "z": 12
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 35,
+        "y": 68,
+        "z": 12
+      },
+      "health": 14.5,
+      "food": 10,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 34,
+          "y": 64,
+          "z": 7
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 51,
+          "y": 88,
+          "z": 5
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 47,
+          "y": 90,
+          "z": 0
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 68,
+          "y": 88,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 67,
+          "y": 87,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 16,
+          "y": 70,
+          "z": -33
+        }
+      ],
+      "chat_backlog": 100
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268505.960287,
+    "duration_ms": 262.93015480041504
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 36,
+      "y": 68,
+      "z": 12
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 35,
+        "y": 68,
+        "z": 12
+      },
+      "health": 14.5,
+      "food": 10,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 34,
+          "y": 63,
+          "z": 7
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 51,
+          "y": 87,
+          "z": 5
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 47,
+          "y": 90,
+          "z": 0
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 68,
+          "y": 88,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 67,
+          "y": 87,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 16,
+          "y": 70,
+          "z": -33
+        }
+      ],
+      "chat_backlog": 100
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268506.3663769,
+    "duration_ms": 51.297664642333984
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 36,
+      "y": 68,
+      "z": 12
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 35,
+        "y": 68,
+        "z": 12
+      },
+      "health": 14.5,
+      "food": 10,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 35,
+          "y": 62,
+          "z": 9
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 48,
+          "y": 85,
+          "z": 6
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 47,
+          "y": 90,
+          "z": 0
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 68,
+          "y": 88,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 67,
+          "y": 87,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 16,
+          "y": 70,
+          "z": -33
+        }
+      ],
+      "chat_backlog": 100
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268508.495611,
+    "duration_ms": 12.260198593139648
+  },
+  {
+    "tool_name": "create_plan",
+    "args": {
+      "goal": "Build a tower"
+    },
+    "result": {
+      "plan_id": "b6febc080c0a"
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268520.4807801,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 33,
+      "y": 70,
+      "z": 9
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 33,
+        "y": 70,
+        "z": 8
+      },
+      "health": 14.5,
+      "food": 10,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 38,
+          "y": 66,
+          "z": 10
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 56,
+          "y": 91,
+          "z": -1
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 47,
+          "y": 90,
+          "z": -6
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 68,
+          "y": 88,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 67,
+          "y": 87,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 16,
+          "y": 70,
+          "z": -33
+        }
+      ],
+      "chat_backlog": 100
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268524.8653078,
+    "duration_ms": 1210.3168964385986
+  },
+  {
+    "tool_name": "build_from_description",
+    "args": {
+      "description": "a stone tower"
+    },
+    "result": {
+      "action": "build_blueprint",
+      "blocks_placed": 0,
+      "blocks_requested": 50,
+      "position": {
+        "x": 33,
+        "y": 70,
+        "z": 8
+      },
+      "health": 14.5,
+      "food": 10,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268526.601351,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "build_from_description",
+    "args": {
+      "description": "a tower"
+    },
+    "result": {
+      "action": "build_blueprint",
+      "blocks_placed": 0,
+      "blocks_requested": 50,
+      "position": {
+        "x": 33,
+        "y": 71,
+        "z": 4
+      },
+      "health": 14.5,
+      "food": 9,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268535.371212,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 33,
+      "y": 70,
+      "z": 8
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 33,
+        "y": 70,
+        "z": 8
+      },
+      "health": 14.5,
+      "food": 9,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 35,
+          "y": 62,
+          "z": 7
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 61,
+          "y": 93,
+          "z": -5
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 47,
+          "y": 90,
+          "z": -6
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 68,
+          "y": 88,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 67,
+          "y": 87,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 16,
+          "y": 70,
+          "z": -33
+        }
+      ],
+      "chat_backlog": 100
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268537.1253939,
+    "duration_ms": 843.7528610229492
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 32,
+      "y": 71,
+      "z": 4
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 32,
+        "y": 71,
+        "z": 5
+      },
+      "health": 14.5,
+      "food": 9,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 34,
+          "y": 62,
+          "z": 6
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 61,
+          "y": 93,
+          "z": -5
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 47,
+          "y": 90,
+          "z": -6
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 68,
+          "y": 88,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 67,
+          "y": 87,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 16,
+          "y": 70,
+          "z": -33
+        }
+      ],
+      "chat_backlog": 100
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268538.1885319,
+    "duration_ms": 930.4051399230957
+  },
+  {
+    "tool_name": "create_plan",
+    "args": {
+      "goal": "Build a tower"
+    },
+    "result": {
+      "plan_id": "ac9f67f80fa2"
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268544.47017,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "cobblestone",
+      "count": 50
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "cobblestone",
+      "mined": 0,
+      "position": {
+        "x": 32,
+        "y": 70,
+        "z": 5
+      },
+      "health": 14.5,
+      "food": 9,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 2
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268551.291921,
+    "duration_ms": 1025.4480838775635
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 35,
+      "y": 70,
+      "z": 5
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "dug_at": {
+        "x": 35,
+        "y": 70,
+        "z": 5
+      },
+      "position": {
+        "x": 33,
+        "y": 70,
+        "z": 5
+      },
+      "health": 14.5,
+      "food": 9,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 3
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268565.2922509,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 34,
+      "y": 70,
+      "z": 5
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "dug_at": {
+        "x": 34,
+        "y": 70,
+        "z": 5
+      },
+      "position": {
+        "x": 33,
+        "y": 70,
+        "z": 5
+      },
+      "health": 14.5,
+      "food": 9,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268568.579159,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 35,
+      "y": 70,
+      "z": 4
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "dug_at": {
+        "x": 35,
+        "y": 70,
+        "z": 4
+      },
+      "position": {
+        "x": 34,
+        "y": 70,
+        "z": 5
+      },
+      "health": 14.5,
+      "food": 9,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 2
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268578.367847,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 36,
+      "y": 70,
+      "z": 4
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "dug_at": {
+        "x": 36,
+        "y": 70,
+        "z": 4
+      },
+      "position": {
+        "x": 35,
+        "y": 70,
+        "z": 5
+      },
+      "health": 14.5,
+      "food": 9,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 3
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268582.385767,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 36,
+      "y": 70,
+      "z": 5
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "dug_at": {
+        "x": 36,
+        "y": 70,
+        "z": 5
+      },
+      "position": {
+        "x": 34,
+        "y": 71,
+        "z": 6
+      },
+      "health": 14.5,
+      "food": 9,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 4
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268584.875066,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 37,
+      "y": 70,
+      "z": 4
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "dug_at": {
+        "x": 37,
+        "y": 70,
+        "z": 4
+      },
+      "position": {
+        "x": 37,
+        "y": 72,
+        "z": 4
+      },
+      "health": 14.5,
+      "food": 9,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268591.5732338,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 37,
+        "y": 72,
+        "z": 0
+      },
+      "health": 14.5,
+      "food": 8.0,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268687.8355021,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 36,
+        "y": 72,
+        "z": 3
+      },
+      "health": 14.5,
+      "food": 8,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268750.907873,
+    "duration_ms": 4668.294906616211
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 36,
+      "y": 70,
+      "z": 1
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "dug_at": {
+        "x": 36,
+        "y": 70,
+        "z": 1
+      },
+      "position": {
+        "x": 36,
+        "y": 72,
+        "z": 1
+      },
+      "health": 14.5,
+      "food": 8,
+      "inventory": [
+        {
+          "item": "bone",
+          "count": 1
+        },
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268752.375061,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 36,
+      "y": 71,
+      "z": 0
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "grass_block",
+      "dug_at": {
+        "x": 36,
+        "y": 71,
+        "z": 0
+      },
+      "position": {
+        "x": 37,
+        "y": 72,
+        "z": 0
+      },
+      "health": 14.5,
+      "food": 8,
+      "inventory": [
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268761.286548,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 37,
+        "y": 72,
+        "z": 0
+      },
+      "health": 14.5,
+      "food": 8.0,
+      "inventory": [
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268776.73475,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 34,
+        "y": 63,
+        "z": 8
+      },
+      "health": 14.5,
+      "food": 7,
+      "inventory": [
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268802.1274838,
+    "duration_ms": 3443.7899589538574
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 34,
+        "y": 63,
+        "z": 8
+      },
+      "health": 14.5,
+      "food": 7.0,
+      "inventory": [
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268837.994339,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 34,
+        "y": 63,
+        "z": 8
+      },
+      "health": 14.5,
+      "food": 7,
+      "inventory": [
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268892.9326599,
+    "duration_ms": 55.24897575378418
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "pig",
+      "defeated": 1,
+      "position": {
+        "x": 37,
+        "y": 65,
+        "z": 10
+      },
+      "health": 14.5,
+      "food": 7,
+      "inventory": [
+        {
+          "item": "cornflower",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268908.343553,
+    "duration_ms": 2280.85994720459
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "zombie",
+      "defeated": 1,
+      "position": {
+        "x": 26,
+        "y": 62,
+        "z": -14
+      },
+      "health": 2.5,
+      "food": 6,
+      "inventory": [
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "porkchop",
+          "count": 3
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268929.9245708,
+    "duration_ms": 11503.772735595703
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 17,
+      "y": 64,
+      "z": -48
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 16,
+        "y": 64,
+        "z": -48
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 63,
+          "y": 94,
+          "z": -7
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 47,
+          "y": 90,
+          "z": -6
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 68,
+          "y": 88,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 67,
+          "y": 87,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 21,
+          "y": 69,
+          "z": -45
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 65,
+          "y": 87,
+          "z": -66
+        }
+      ],
+      "chat_backlog": 26
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773268955.105821,
+    "duration_ms": 2958.307981491089
+  },
+  {
+    "tool_name": "dig_block",
+    "args": {
+      "x": 10,
+      "y": 62,
+      "z": -32
+    },
+    "result": {
+      "action": "dig_block",
+      "block": "dirt",
+      "dug_at": {
+        "x": 10,
+        "y": 62,
+        "z": -32
+      },
+      "position": {
+        "x": 10,
+        "y": 63,
+        "z": -31
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773269064.673557,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "spider",
+      "defeated": 1,
+      "position": {
+        "x": 16,
+        "y": 71,
+        "z": -27
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773269120.4600031,
+    "duration_ms": 10973.572254180908
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "spider",
+      "defeated": 1,
+      "position": {
+        "x": 22,
+        "y": 71,
+        "z": -28
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773269137.415645,
+    "duration_ms": 999.9268054962158
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "spider",
+      "defeated": 1,
+      "position": {
+        "x": 23,
+        "y": 71,
+        "z": -24
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773269142.0753121,
+    "duration_ms": 745.1431751251221
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "spider",
+      "defeated": 1,
+      "position": {
+        "x": 23,
+        "y": 71,
+        "z": -31
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773269146.555157,
+    "duration_ms": 1306.1769008636475
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "spider",
+      "defeated": 1,
+      "position": {
+        "x": 23,
+        "y": 71,
+        "z": -29
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773269150.124615,
+    "duration_ms": 419.5561408996582
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "spider",
+      "defeated": 1,
+      "position": {
+        "x": 24,
+        "y": 72,
+        "z": -33
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773269154.146754,
+    "duration_ms": 1204.7967910766602
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "spider",
+      "defeated": 1,
+      "position": {
+        "x": 9,
+        "y": 62,
+        "z": -28
+      },
+      "health": 12.333334922790527,
+      "food": 19,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773269203.194659,
+    "duration_ms": 928.8599491119385
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 20,
+        "y": 69,
+        "z": -41
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773269267.749915,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "defeated": 1,
+      "position": {
+        "x": 22,
+        "y": 70,
+        "z": -38
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773269290.852122,
+    "duration_ms": 54.11815643310547
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 21,
+        "y": 70,
+        "z": -40
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773269357.629407,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "defeated": 1,
+      "position": {
+        "x": 21,
+        "y": 70,
+        "z": -40
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773269530.928231,
+    "duration_ms": 53.63106727600098
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 21,
+        "y": 70,
+        "z": -40
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773269730.9143739,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 22,
+        "y": 69,
+        "z": -37
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 2
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773270338.6526358,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "go_to_known_location",
+    "args": {
+      "x": 19,
+      "y": 69,
+      "z": -26
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 19,
+        "y": 70,
+        "z": -26
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 2
+        }
+      ],
+      "entities": [
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 63,
+          "y": 94,
+          "z": -7
+        },
+        {
+          "name": "pig",
+          "kind": "animal",
+          "x": 47,
+          "y": 90,
+          "z": -6
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 26
+        },
+        {
+          "name": "donkey",
+          "kind": "animal",
+          "x": 65,
+          "y": 133,
+          "z": 28
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 68,
+          "y": 88,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 67,
+          "y": 87,
+          "z": -68
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 35,
+          "y": 66,
+          "z": -76
+        },
+        {
+          "name": "sheep",
+          "kind": "animal",
+          "x": 65,
+          "y": 87,
+          "z": -66
+        }
+      ],
+      "chat_backlog": 10
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773270409.139919,
+    "duration_ms": 181.0770034790039
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 36,
+        "y": 69,
+        "z": -66
+      },
+      "health": 20.0,
+      "food": 18.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 2
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773270573.985322,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 26,
+        "y": 69,
+        "z": -35
+      },
+      "health": 20,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 5
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773270626.480436,
+    "duration_ms": 6323.884963989258
+  },
+  {
+    "tool_name": "place_block",
+    "args": {
+      "block": "dirt",
+      "x": 27,
+      "y": 70,
+      "z": -35
+    },
+    "result": {
+      "action": "place_block",
+      "block": "dirt",
+      "placed_at": {
+        "x": 27,
+        "y": 70,
+        "z": -35
+      },
+      "position": {
+        "x": 26,
+        "y": 69,
+        "z": -35
+      },
+      "health": 20,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 6
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773270674.771054,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "place_block",
+    "args": {
+      "block": "dirt",
+      "x": 27,
+      "y": 69,
+      "z": -35
+    },
+    "result": {
+      "action": "place_block",
+      "block": "dirt",
+      "placed_at": {
+        "x": 27,
+        "y": 69,
+        "z": -35
+      },
+      "position": {
+        "x": 26,
+        "y": 69,
+        "z": -35
+      },
+      "health": 20,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 5
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773270675.072664,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 26,
+        "y": 69,
+        "z": -35
+      },
+      "health": 20.0,
+      "food": 17.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773270827.112334,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 25,
+        "y": 69,
+        "z": -35
+      },
+      "health": 20,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 12
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773270892.573227,
+    "duration_ms": 6335.290193557739
+  },
+  {
+    "tool_name": "build_from_description",
+    "args": {
+      "description": "a simple dirt hut"
+    },
+    "result": {
+      "action": "build_blueprint",
+      "blocks_placed": 0,
+      "blocks_requested": 80,
+      "position": {
+        "x": 17,
+        "y": 67,
+        "z": -35
+      },
+      "health": 20,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dandelion",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 64
+        },
+        {
+          "item": "dirt",
+          "count": 4
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773270973.232543,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 19,
+        "y": 67,
+        "z": -37
+      },
+      "health": 20.0,
+      "food": 16.0,
+      "inventory": [
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dandelion",
+          "count": 2
+        },
+        {
+          "item": "dirt",
+          "count": 64
+        },
+        {
+          "item": "dirt",
+          "count": 14
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271290.127557,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "create_plan",
+    "args": {
+      "goal": "get stone tools"
+    },
+    "result": {
+      "plan_id": "66fbb61ce507"
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271310.183137,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "recovery:mine_resource",
+    "args": {
+      "count": 4,
+      "name": "oak_log"
+    },
+    "result": {
+      "result": {
+        "action": "mine_resource",
+        "resource": "oak_log",
+        "mined": 3,
+        "position": {
+          "x": 11,
+          "y": 64,
+          "z": -32
+        },
+        "health": 20,
+        "food": 16,
+        "inventory": [
+          {
+            "item": "cornflower",
+            "count": 1
+          },
+          {
+            "item": "dandelion",
+            "count": 2
+          },
+          {
+            "item": "dirt",
+            "count": 63
+          },
+          {
+            "item": "dirt",
+            "count": 14
+          },
+          {
+            "item": "oak_log",
+            "count": 4
+          },
+          {
+            "item": "oak_sapling",
+            "count": 2
+          },
+          {
+            "item": "stick",
+            "count": 1
+          }
+        ]
+      },
+      "attempts": 2,
+      "recovered": true,
+      "duration_ms": 10499
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271351.272574,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "recovery:craft_items",
+    "args": {
+      "count": 4,
+      "item": "oak_planks"
+    },
+    "result": {
+      "result": {
+        "action": "craft_items",
+        "item": "oak_planks",
+        "crafted": 4,
+        "position": {
+          "x": 11,
+          "y": 64,
+          "z": -32
+        },
+        "health": 20,
+        "food": 16,
+        "inventory": [
+          {
+            "item": "cornflower",
+            "count": 1
+          },
+          {
+            "item": "dandelion",
+            "count": 2
+          },
+          {
+            "item": "dirt",
+            "count": 63
+          },
+          {
+            "item": "dirt",
+            "count": 14
+          },
+          {
+            "item": "oak_log",
+            "count": 3
+          },
+          {
+            "item": "oak_planks",
+            "count": 4
+          },
+          {
+            "item": "oak_sapling",
+            "count": 2
+          },
+          {
+            "item": "stick",
+            "count": 1
+          }
+        ]
+      },
+      "attempts": 1,
+      "recovered": false,
+      "duration_ms": 166
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271351.576549,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "recovery:craft_items",
+    "args": {
+      "count": 4,
+      "item": "stick"
+    },
+    "result": {
+      "result": {
+        "action": "craft_items",
+        "item": "stick",
+        "crafted": 4,
+        "position": {
+          "x": 11,
+          "y": 64,
+          "z": -32
+        },
+        "health": 20,
+        "food": 16,
+        "inventory": [
+          {
+            "item": "cornflower",
+            "count": 1
+          },
+          {
+            "item": "dandelion",
+            "count": 2
+          },
+          {
+            "item": "dirt",
+            "count": 63
+          },
+          {
+            "item": "dirt",
+            "count": 14
+          },
+          {
+            "item": "oak_log",
+            "count": 3
+          },
+          {
+            "item": "oak_planks",
+            "count": 2
+          },
+          {
+            "item": "oak_sapling",
+            "count": 2
+          },
+          {
+            "item": "stick",
+            "count": 5
+          }
+        ]
+      },
+      "attempts": 1,
+      "recovered": false,
+      "duration_ms": 100
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271351.8054988,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "save_skill",
+    "args": {
+      "name": "early_game_setup"
+    },
+    "result": {
+      "name": "early_game_setup",
+      "description": "Complete early game: wood, planks, sticks, stone tools",
+      "tags": [
+        "early-game",
+        "tools",
+        "essential"
+      ],
+      "tool_sequence": [
+        {
+          "tool": "mine_resource",
+          "args": {
+            "name": "oak_log",
+            "count": 4
+          }
+        },
+        {
+          "tool": "craft_items",
+          "args": {
+            "item": "oak_planks",
+            "count": 4
+          }
+        },
+        {
+          "tool": "craft_items",
+          "args": {
+            "item": "stick",
+            "count": 4
+          }
+        },
+        {
+          "tool": "mine_resource",
+          "args": {
+            "name": "cobblestone",
+            "count": 11
+          }
+        },
+        {
+          "tool": "craft_items",
+          "args": {
+            "item": "stone_pickaxe",
+            "count": 1
+          }
+        }
+      ],
+      "success_count": 0,
+      "failure_count": 0,
+      "created_at": 1773271351.993531,
+      "last_used": null
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271351.994894,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "build_from_description",
+    "args": {
+      "description": "a 5x5x4 house"
+    },
+    "result": {
+      "action": "build_blueprint",
+      "blocks_placed": 0,
+      "blocks_requested": 80,
+      "position": {
+        "x": 11,
+        "y": 64,
+        "z": -32
+      },
+      "health": 20,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dandelion",
+          "count": 2
+        },
+        {
+          "item": "dirt",
+          "count": 63
+        },
+        {
+          "item": "dirt",
+          "count": 14
+        },
+        {
+          "item": "oak_log",
+          "count": 3
+        },
+        {
+          "item": "oak_planks",
+          "count": 2
+        },
+        {
+          "item": "oak_sapling",
+          "count": 2
+        },
+        {
+          "item": "stick",
+          "count": 5
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271352.061703,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 11,
+        "y": 64,
+        "z": -32
+      },
+      "health": 20.0,
+      "food": 16.0,
+      "inventory": [
+        {
+          "item": "cornflower",
+          "count": 1
+        },
+        {
+          "item": "dandelion",
+          "count": 2
+        },
+        {
+          "item": "dirt",
+          "count": 63
+        },
+        {
+          "item": "dirt",
+          "count": 14
+        },
+        {
+          "item": "oak_log",
+          "count": 3
+        },
+        {
+          "item": "oak_planks",
+          "count": 2
+        },
+        {
+          "item": "oak_sapling",
+          "count": 2
+        },
+        {
+          "item": "stick",
+          "count": 5
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271417.6726341,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "grass_block",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "grass_block",
+      "mined": 5,
+      "position": {
+        "x": 26,
+        "y": 70,
+        "z": -28
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271482.055331,
+    "duration_ms": 8369.531154632568
+  },
+  {
+    "tool_name": "build_from_description",
+    "args": {
+      "description": "build a dirt pillar 5 blocks high"
+    },
+    "result": {
+      "action": "build_blueprint",
+      "blocks_placed": 0,
+      "blocks_requested": 4,
+      "position": {
+        "x": 25,
+        "y": 70,
+        "z": -28
+      },
+      "health": 13.166666984558105,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 5
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271526.038282,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 25,
+        "y": 68,
+        "z": -28
+      },
+      "health": 13.166666984558105,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 9
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271552.097513,
+    "duration_ms": 9947.49402999878
+  },
+  {
+    "tool_name": "place_block",
+    "args": {
+      "block": "dirt",
+      "x": 25,
+      "y": 70,
+      "z": -28
+    },
+    "result": {
+      "action": "place_block",
+      "block": "dirt",
+      "placed_at": {
+        "x": 25,
+        "y": 70,
+        "z": -28
+      },
+      "position": {
+        "x": 25,
+        "y": 68,
+        "z": -28
+      },
+      "health": 13.166666984558105,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 10
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271557.219332,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "place_block",
+    "args": {
+      "block": "dirt",
+      "x": 25,
+      "y": 71,
+      "z": -28
+    },
+    "result": {
+      "action": "place_block",
+      "block": "dirt",
+      "placed_at": {
+        "x": 25,
+        "y": 71,
+        "z": -28
+      },
+      "position": {
+        "x": 25,
+        "y": 68,
+        "z": -28
+      },
+      "health": 13.166666984558105,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 9
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271557.914326,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "place_block",
+    "args": {
+      "block": "dirt",
+      "x": 25,
+      "y": 72,
+      "z": -28
+    },
+    "result": {
+      "action": "place_block",
+      "block": "dirt",
+      "placed_at": {
+        "x": 25,
+        "y": 72,
+        "z": -28
+      },
+      "position": {
+        "x": 25,
+        "y": 69,
+        "z": -28
+      },
+      "health": 13.166666984558105,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 8
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271563.9728682,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "place_block",
+    "args": {
+      "block": "dirt",
+      "x": 25,
+      "y": 73,
+      "z": -28
+    },
+    "result": {
+      "action": "place_block",
+      "block": "dirt",
+      "placed_at": {
+        "x": 25,
+        "y": 73,
+        "z": -28
+      },
+      "position": {
+        "x": 25,
+        "y": 70,
+        "z": -28
+      },
+      "health": 13.166666984558105,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 6
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271575.60631,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "place_block",
+    "args": {
+      "block": "dirt",
+      "x": 25,
+      "y": 74,
+      "z": -28
+    },
+    "result": {
+      "action": "place_block",
+      "block": "dirt",
+      "placed_at": {
+        "x": 25,
+        "y": 74,
+        "z": -28
+      },
+      "position": {
+        "x": 26,
+        "y": 71,
+        "z": -28
+      },
+      "health": 13.166666984558105,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271589.974798,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 26,
+        "y": 71,
+        "z": -28
+      },
+      "health": 13.166666984558105,
+      "food": 17.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 3
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271875.448611,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 25,
+        "y": 70,
+        "z": -23
+      },
+      "health": 13.166666984558105,
+      "food": 17,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 8
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773271909.089411,
+    "duration_ms": 9266.273975372314
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 25,
+        "y": 70,
+        "z": -23
+      },
+      "health": 13.166666984558105,
+      "food": 17.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773272083.7618911,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 26,
+        "y": 70,
+        "z": -22
+      },
+      "health": 13.166666984558105,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 6
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773272122.864948,
+    "duration_ms": 10628.930807113647
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 26,
+        "y": 69,
+        "z": -22
+      },
+      "health": 13.166666984558105,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 10
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773272173.9043999,
+    "duration_ms": 6749.458074569702
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 26,
+        "y": 69,
+        "z": -22
+      },
+      "health": 13.166666984558105,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 15
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773272203.066419,
+    "duration_ms": 6867.820262908936
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 49,
+        "y": 70,
+        "z": -39
+      },
+      "health": 10.166666984558105,
+      "food": 15.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 14
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773272292.363582,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "sheep",
+      "killed": 1,
+      "hits": 6,
+      "position": {
+        "x": 51,
+        "y": 70,
+        "z": -45
+      },
+      "health": 10.166666984558105,
+      "food": 14,
+      "inventory": [
+        {
+          "item": "mutton",
+          "count": 1
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 1
+        },
+        {
+          "item": "white_wool",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773272446.8718,
+    "duration_ms": 16506.332874298096
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 20,
+        "y": 69,
+        "z": -25
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 6
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773273099.6257951,
+    "duration_ms": 10255.95498085022
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 20,
+        "y": 69,
+        "z": -25
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 11
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773273125.960333,
+    "duration_ms": 3997.6799488067627
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "salmon",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "salmon",
+      "killed": 1,
+      "hits": 5,
+      "position": {
+        "x": -3,
+        "y": 62,
+        "z": -8
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "salmon",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773273188.434719,
+    "duration_ms": 13231.239080429077
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "salmon",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "salmon",
+      "killed": 1,
+      "hits": 3,
+      "position": {
+        "x": 24,
+        "y": 73,
+        "z": -30
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773273221.6306229,
+    "duration_ms": 24024.796962738037
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 24,
+        "y": 71,
+        "z": -28
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773273391.7837389,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "grass_block",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "grass_block",
+      "mined": 5,
+      "position": {
+        "x": 20,
+        "y": 68,
+        "z": -26
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 5
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773273419.196291,
+    "duration_ms": 9988.70301246643
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 2
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 2,
+      "position": {
+        "x": 7,
+        "y": 64,
+        "z": 59
+      },
+      "health": 20,
+      "food": 15,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 3
+        },
+        {
+          "item": "porkchop",
+          "count": 4
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773273634.128289,
+    "duration_ms": 6042.289972305298
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 8
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 8,
+      "position": {
+        "x": 4,
+        "y": 62,
+        "z": 59
+      },
+      "health": 20,
+      "food": 15,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        },
+        {
+          "item": "porkchop",
+          "count": 4
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773273652.4590971,
+    "duration_ms": 9185.793161392212
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 46,
+        "y": 87,
+        "z": -3
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "porkchop",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773274231.9410949,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 27,
+        "y": 71,
+        "z": -5
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "porkchop",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773274268.632496,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 21,
+        "y": 69,
+        "z": -10
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        },
+        {
+          "item": "porkchop",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773274291.951997,
+    "duration_ms": 10968.099117279053
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 21,
+        "y": 69,
+        "z": -10
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 10
+        },
+        {
+          "item": "porkchop",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773274310.549771,
+    "duration_ms": 6065.876007080078
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 28,
+        "y": 67,
+        "z": 20
+      },
+      "health": 20.0,
+      "food": 16.0,
+      "inventory": [
+        {
+          "item": "dandelion",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 64
+        },
+        {
+          "item": "dirt",
+          "count": 21
+        },
+        {
+          "item": "porkchop",
+          "count": 1
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 3
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773274668.3573198,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 28,
+        "y": 67,
+        "z": 20
+      },
+      "health": 20.0,
+      "food": 16.0,
+      "inventory": [
+        {
+          "item": "dandelion",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 64
+        },
+        {
+          "item": "dirt",
+          "count": 21
+        },
+        {
+          "item": "porkchop",
+          "count": 1
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 3
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773274701.859626,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 28,
+        "y": 67,
+        "z": 20
+      },
+      "health": 20.0,
+      "food": 16.0,
+      "inventory": [
+        {
+          "item": "dandelion",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 64
+        },
+        {
+          "item": "dirt",
+          "count": 21
+        },
+        {
+          "item": "porkchop",
+          "count": 1
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 3
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773274767.1338198,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 25,
+        "y": 65,
+        "z": 23
+      },
+      "health": 20.0,
+      "food": 16.0,
+      "inventory": [
+        {
+          "item": "dandelion",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 64
+        },
+        {
+          "item": "dirt",
+          "count": 21
+        },
+        {
+          "item": "porkchop",
+          "count": 1
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 3
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 14
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773274861.12268,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 62327,
+      "position": {
+        "x": 25,
+        "y": 65,
+        "z": 23
+      },
+      "health": 20.0,
+      "food": 16.0,
+      "inventory": [
+        {
+          "item": "dandelion",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 64
+        },
+        {
+          "item": "dirt",
+          "count": 21
+        },
+        {
+          "item": "porkchop",
+          "count": 1
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 3
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773274903.531796,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": 22,
+        "y": 62,
+        "z": 21
+      },
+      "health": 20,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "dandelion",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 64
+        },
+        {
+          "item": "dirt",
+          "count": 24
+        },
+        {
+          "item": "porkchop",
+          "count": 1
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 3
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773274941.6502342,
+    "duration_ms": 9980.677127838135
+  },
+  {
+    "tool_name": "place_block",
+    "args": {
+      "block": "dirt",
+      "x": 24,
+      "y": 71,
+      "z": -3
+    },
+    "result": {
+      "action": "place_block",
+      "block": "dirt",
+      "placed_at": {
+        "x": 24,
+        "y": 71,
+        "z": -3
+      },
+      "position": {
+        "x": 24,
+        "y": 71,
+        "z": -6
+      },
+      "health": 6,
+      "food": 14,
+      "inventory": [
+        {
+          "item": "dandelion",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 64
+        },
+        {
+          "item": "dirt",
+          "count": 25
+        },
+        {
+          "item": "porkchop",
+          "count": 1
+        },
+        {
+          "item": "wheat_seeds",
+          "count": 3
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773274981.0350778,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 50542
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 50542,
+      "position": {
+        "x": -3,
+        "y": -60,
+        "z": 4
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773275084.858607,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "slime",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "slime",
+      "killed": 1,
+      "hits": 39,
+      "position": {
+        "x": -47,
+        "y": -60,
+        "z": 23
+      },
+      "health": 18.666664123535156,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773275123.882398,
+    "duration_ms": 14262.804985046387
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 50542
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 50542,
+      "position": {
+        "x": -1,
+        "y": -60,
+        "z": -4
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773275208.020242,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "grass_block",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "grass_block",
+      "mined": 5,
+      "position": {
+        "x": -44,
+        "y": -61,
+        "z": -6
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773275319.023613,
+    "duration_ms": 217.47422218322754
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "dirt",
+      "count": 5
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "dirt",
+      "mined": 5,
+      "position": {
+        "x": -44,
+        "y": -62,
+        "z": -6
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773275333.4212081,
+    "duration_ms": 237.87689208984375
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 50542
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 50542,
+      "position": {
+        "x": -44,
+        "y": -63,
+        "z": -6
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773275454.9787278,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 50542
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 50542,
+      "position": {
+        "x": -44,
+        "y": -63,
+        "z": -6
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773275499.237348,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "slime",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "slime",
+      "killed": 1,
+      "hits": 12,
+      "position": {
+        "x": -48,
+        "y": -60,
+        "z": -22
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "slime_ball",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773275625.134233,
+    "duration_ms": 4156.715869903564
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 50542
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 50542,
+      "position": {
+        "x": -51,
+        "y": -60,
+        "z": -25
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "slime_ball",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773275916.005787,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 1,
+      "hits": 14,
+      "position": {
+        "x": -32,
+        "y": -60,
+        "z": -51
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "porkchop",
+          "count": 4
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773275989.664122,
+    "duration_ms": 4194.735288619995
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "grass_block",
+      "count": 4
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "grass_block",
+      "mined": 4,
+      "position": {
+        "x": -31,
+        "y": -61,
+        "z": -49
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 3
+        },
+        {
+          "item": "porkchop",
+          "count": 4
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773276043.575171,
+    "duration_ms": 7276.493072509766
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "stone",
+      "count": 4
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "stone",
+      "mined": 0,
+      "position": {
+        "x": -29,
+        "y": -60,
+        "z": -52
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 4
+        },
+        {
+          "item": "porkchop",
+          "count": 4
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773276063.374959,
+    "duration_ms": 68.71509552001953
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 50542
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "127.0.0.1",
+      "port": 50542,
+      "position": {
+        "x": -28,
+        "y": -60,
+        "z": -48
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "porkchop",
+          "count": 4
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ],
+      "entities": [
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773276157.037087,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "0rad",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 1,
+      "hits": 68,
+      "position": {
+        "x": -29,
+        "y": -60,
+        "z": 16
+      },
+      "health": 19.007999420166016,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "porkchop",
+          "count": 9
+        },
+        {
+          "item": "red_wool",
+          "count": 64
+        },
+        {
+          "item": "slime_ball",
+          "count": 1
+        },
+        {
+          "item": "slime_spawn_egg",
+          "count": 64
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773276231.1670961,
+    "duration_ms": 15622.369050979614
+  }
+]

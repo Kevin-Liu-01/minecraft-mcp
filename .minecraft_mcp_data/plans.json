@@ -1,0 +1,219 @@
+[
+  {
+    "plan_id": "894f6640d9fb",
+    "goal": "Build a 10 block tall tower",
+    "steps": [
+      {
+        "step_id": "aee61ed3",
+        "description": "Execute goal: Build a 10 block tall tower",
+        "tool_name": "inspect_world",
+        "tool_args": {
+          "radius": 32
+        },
+        "status": "pending",
+        "result": null,
+        "error": null,
+        "started_at": null,
+        "completed_at": null
+      }
+    ],
+    "status": "pending",
+    "created_at": 1773266951.457421,
+    "updated_at": 1773266951.457429
+  },
+  {
+    "plan_id": "68fdcf3c49d1",
+    "goal": "Build a 10 block tall tower",
+    "steps": [
+      {
+        "step_id": "f1a814c5",
+        "description": "Execute goal: Build a 10 block tall tower",
+        "tool_name": "inspect_world",
+        "tool_args": {
+          "radius": 32
+        },
+        "status": "pending",
+        "result": null,
+        "error": null,
+        "started_at": null,
+        "completed_at": null
+      }
+    ],
+    "status": "pending",
+    "created_at": 1773266953.4383721,
+    "updated_at": 1773266953.438373
+  },
+  {
+    "plan_id": "5324046dca63",
+    "goal": "Build a 10 block tall tower",
+    "steps": [
+      {
+        "step_id": "fda11fc0",
+        "description": "Execute goal: Build a 10 block tall tower",
+        "tool_name": "inspect_world",
+        "tool_args": {
+          "radius": 32
+        },
+        "status": "pending",
+        "result": null,
+        "error": null,
+        "started_at": null,
+        "completed_at": null
+      }
+    ],
+    "status": "pending",
+    "created_at": 1773266954.4213219,
+    "updated_at": 1773266954.4213219
+  },
+  {
+    "plan_id": "b6febc080c0a",
+    "goal": "Build a tower",
+    "steps": [
+      {
+        "step_id": "c4ff7e68",
+        "description": "Execute goal: Build a tower",
+        "tool_name": "inspect_world",
+        "tool_args": {
+          "radius": 32
+        },
+        "status": "pending",
+        "result": null,
+        "error": null,
+        "started_at": null,
+        "completed_at": null
+      }
+    ],
+    "status": "pending",
+    "created_at": 1773268520.479692,
+    "updated_at": 1773268520.479692
+  },
+  {
+    "plan_id": "ac9f67f80fa2",
+    "goal": "Build a tower",
+    "steps": [
+      {
+        "step_id": "9d2a08a7",
+        "description": "Execute goal: Build a tower",
+        "tool_name": "inspect_world",
+        "tool_args": {
+          "radius": 32
+        },
+        "status": "pending",
+        "result": null,
+        "error": null,
+        "started_at": null,
+        "completed_at": null
+      }
+    ],
+    "status": "pending",
+    "created_at": 1773268544.469728,
+    "updated_at": 1773268544.469728
+  },
+  {
+    "plan_id": "66fbb61ce507",
+    "goal": "get stone tools",
+    "steps": [
+      {
+        "step_id": "a373c7be",
+        "description": "Ensure we have wood",
+        "tool_name": "mine_resource",
+        "tool_args": {
+          "name": "oak_log",
+          "count": 4
+        },
+        "status": "completed",
+        "result": "{\"action\": \"mine_resource\", \"food\": 16, \"health\": 20, \"inventory\": [{\"count\": 1, \"item\": \"cornflower\"}, {\"count\": 2, \"item\": \"dandelion\"}, {\"count\": 63, \"item\": \"dirt\"}, {\"count\": 14, \"item\": \"dirt\"}, {\"count\": 4, \"item\": \"oak_log\"}, {\"count\": 2, \"item\": \"oak_sapling\"}, {\"count\": 1, \"item\": \"stick\"}], \"mined\": 3, \"position\": {\"x\": 11, \"y\": 64, \"z\": -32}, \"resource\": \"oak_log\"}",
+        "error": null,
+        "started_at": null,
+        "completed_at": 1773271351.3570502
+      },
+      {
+        "step_id": "f15be5f9",
+        "description": "Craft planks",
+        "tool_name": "craft_items",
+        "tool_args": {
+          "item": "oak_planks",
+          "count": 4
+        },
+        "status": "completed",
+        "result": "{\"action\": \"craft_items\", \"crafted\": 4, \"food\": 16, \"health\": 20, \"inventory\": [{\"count\": 1, \"item\": \"cornflower\"}, {\"count\": 2, \"item\": \"dandelion\"}, {\"count\": 63, \"item\": \"dirt\"}, {\"count\": 14, \"item\": \"dirt\"}, {\"count\": 3, \"item\": \"oak_log\"}, {\"count\": 4, \"item\": \"oak_planks\"}, {\"count\": 2, \"item\": \"oak_sapling\"}, {\"count\": 1, \"item\": \"stick\"}], \"item\": \"oak_planks\", \"position\": {\"x\": 11, \"y\": 64, \"z\": -32}}",
+        "error": null,
+        "started_at": null,
+        "completed_at": 1773271351.642879
+      },
+      {
+        "step_id": "eaffaca1",
+        "description": "Craft sticks",
+        "tool_name": "craft_items",
+        "tool_args": {
+          "item": "stick",
+          "count": 4
+        },
+        "status": "completed",
+        "result": "{\"action\": \"craft_items\", \"crafted\": 4, \"food\": 16, \"health\": 20, \"inventory\": [{\"count\": 1, \"item\": \"cornflower\"}, {\"count\": 2, \"item\": \"dandelion\"}, {\"count\": 63, \"item\": \"dirt\"}, {\"count\": 14, \"item\": \"dirt\"}, {\"count\": 3, \"item\": \"oak_log\"}, {\"count\": 2, \"item\": \"oak_planks\"}, {\"count\": 2, \"item\": \"oak_sapling\"}, {\"count\": 5, \"item\": \"stick\"}], \"item\": \"stick\", \"position\": {\"x\": 11, \"y\": 64, \"z\": -32}}",
+        "error": null,
+        "started_at": null,
+        "completed_at": 1773271351.870487
+      },
+      {
+        "step_id": "2c8484bc",
+        "description": "Craft wooden pickaxe",
+        "tool_name": "craft_items",
+        "tool_args": {
+          "item": "wooden_pickaxe",
+          "count": 1
+        },
+        "status": "pending",
+        "result": null,
+        "error": null,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "step_id": "491f87f6",
+        "description": "Mine cobblestone",
+        "tool_name": "mine_resource",
+        "tool_args": {
+          "name": "cobblestone",
+          "count": 11
+        },
+        "status": "pending",
+        "result": null,
+        "error": null,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "step_id": "9178f2d2",
+        "description": "Craft stone pickaxe",
+        "tool_name": "craft_items",
+        "tool_args": {
+          "item": "stone_pickaxe",
+          "count": 1
+        },
+        "status": "pending",
+        "result": null,
+        "error": null,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "step_id": "9187327c",
+        "description": "Craft furnace",
+        "tool_name": "craft_items",
+        "tool_args": {
+          "item": "furnace",
+          "count": 1
+        },
+        "status": "pending",
+        "result": null,
+        "error": null,
+        "started_at": null,
+        "completed_at": null
+      }
+    ],
+    "status": "pending",
+    "created_at": 1773271310.1789289,
+    "updated_at": 1773271351.87072
+  }
+]

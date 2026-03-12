@@ -13,11 +13,16 @@ import os
 import sys
 from pathlib import Path
 
+import logging
+
 import httpx
 from dedalus_mcp.client import MCPClient
 from dotenv import load_dotenv
 
 load_dotenv()
+
+logging.getLogger("httpx").setLevel(logging.WARNING)
+logging.getLogger("mcp").setLevel(logging.WARNING)
 
 ROOT = Path(__file__).resolve().parent
 DEFAULT_BRIDGE_HOST = "0.0.0.0"
@@ -35,6 +40,20 @@ def _bridge_url(host: str, port: int) -> str:
     return f"http://{host}:{port}"
 
 
+_NOISY_SUBSTRINGS = (
+    '"POST /mcp HTTP',
+    '"GET /mcp HTTP',
+    "HTTP Request:",
+    "Terminating session:",
+    "request completed",
+    "Negotiated protocol version",
+    "entity.objectType is deprecated",
+    "at printObjectTypeWarning",
+    "at get objectType",
+    "Trace: Warning:",
+)
+
+
 async def _pipe_output(name: str, stream: asyncio.StreamReader | None) -> None:
     if stream is None:
         return
@@ -42,7 +61,10 @@ async def _pipe_output(name: str, stream: asyncio.StreamReader | None) -> None:
         line = await stream.readline()
         if not line:
             return
-        print(f"[{name}] {line.decode().rstrip()}")
+        text = line.decode().rstrip()
+        if any(s in text for s in _NOISY_SUBSTRINGS):
+            continue
+        print(f"[{name}] {text}")
 
 
 async def _start_process(name: str, *cmd: str, cwd: Path) -> tuple[asyncio.subprocess.Process, asyncio.Task[None]]:
@@ -102,7 +124,11 @@ async def _join_game(server_url: str, host: str, port: int, username: str, auth:
         )
         for c in result.content:
             if c.type == "text":
-                data = json.loads(c.text)
+                try:
+                    data = json.loads(c.text)
+                except (json.JSONDecodeError, TypeError):
+                    print(f"[launcher] Join response (not JSON): {c.text[:200]}")
+                    return False
                 if data.get("connected"):
                     print(f"[launcher] Joined game at {host}:{port} as {data.get('username', username)}")
                     return True
@@ -215,7 +241,7 @@ def main() -> None:
         default=os.environ.get("AGENT_MCP_URL", ""),
         help="MCP URL for the Dedalus agent (use ngrok URL so cloud can reach your MCP; e.g. https://xxx.ngrok.io/mcp)",
     )
-    p.add_argument("--poll-interval", type=float, default=8.0, help="Chat poll interval (seconds)")
+    p.add_argument("--poll-interval", type=float, default=1.5, help="Chat poll interval (seconds)")
     p.add_argument("--chat-limit", type=int, default=20, help="Chat messages to fetch per poll")
     p.add_argument(
         "--continue-after",

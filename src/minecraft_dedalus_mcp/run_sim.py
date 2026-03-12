@@ -175,7 +175,7 @@ def main() -> None:
     parser.add_argument("--join-port", type=int, default=25565)
     parser.add_argument("--username", default="DedalusBot")
     parser.add_argument("--auth", default="offline")
-    parser.add_argument("--model", default="openai/gpt-5.2")
+    parser.add_argument("--model", default=os.environ.get("DEDALUS_MODEL", "openai/gpt-4o-mini"))
     parser.add_argument("--max-steps", type=int, default=12)
     parser.add_argument("--goal")
     parser.add_argument(

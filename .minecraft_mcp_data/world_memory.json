@@ -1,0 +1,171 @@
+{
+  "locations": [
+    {
+      "name": "base_camp",
+      "x": 0,
+      "y": 64,
+      "z": 0,
+      "tags": [
+        "base",
+        "home"
+      ],
+      "notes": "Our starting base",
+      "discovered_at": 1773271351.898083
+    }
+  ],
+  "resources": [
+    {
+      "block_name": "cobblestone",
+      "x": 5,
+      "y": 60,
+      "z": 5,
+      "estimated_count": 50,
+      "last_seen": 1773271351.947079
+    }
+  ],
+  "structures": [
+    {
+      "name": "pillar",
+      "origin_x": -20,
+      "origin_y": 101,
+      "origin_z": 34,
+      "width": 1,
+      "length": 1,
+      "height": 4,
+      "block_count": 0,
+      "built_at": 1773263279.7384079
+    },
+    {
+      "name": "pillar_dark_oak_log",
+      "origin_x": 4,
+      "origin_y": 116,
+      "origin_z": 26,
+      "width": 5,
+      "length": 5,
+      "height": 4,
+      "block_count": 4,
+      "built_at": 1773263555.3250299
+    },
+    {
+      "name": "tower",
+      "origin_x": 17,
+      "origin_y": 68,
+      "origin_z": -31,
+      "width": 4,
+      "length": 4,
+      "height": 4,
+      "block_count": 0,
+      "built_at": 1773264601.991498
+    },
+    {
+      "name": "tower",
+      "origin_x": 17,
+      "origin_y": 68,
+      "origin_z": -31,
+      "width": 4,
+      "length": 4,
+      "height": 4,
+      "block_count": 0,
+      "built_at": 1773264603.548564
+    },
+    {
+      "name": "tower",
+      "origin_x": 17,
+      "origin_y": 68,
+      "origin_z": -31,
+      "width": 4,
+      "length": 4,
+      "height": 4,
+      "block_count": 0,
+      "built_at": 1773264604.574868
+    },
+    {
+      "name": "tower",
+      "origin_x": 18,
+      "origin_y": 68,
+      "origin_z": -31,
+      "width": 4,
+      "length": 4,
+      "height": 4,
+      "block_count": 0,
+      "built_at": 1773265108.0150971
+    },
+    {
+      "name": "tower",
+      "origin_x": 18,
+      "origin_y": 68,
+      "origin_z": -31,
+      "width": 4,
+      "length": 4,
+      "height": 4,
+      "block_count": 0,
+      "built_at": 1773265110.711444
+    },
+    {
+      "name": "tower",
+      "origin_x": 36,
+      "origin_y": 68,
+      "origin_z": -52,
+      "width": 4,
+      "length": 4,
+      "height": 4,
+      "block_count": 1,
+      "built_at": 1773266974.613887
+    },
+    {
+      "name": "tower",
+      "origin_x": 35,
+      "origin_y": 72,
+      "origin_z": 4,
+      "width": 4,
+      "length": 4,
+      "height": 4,
+      "block_count": 0,
+      "built_at": 1773268526.599703
+    },
+    {
+      "name": "tower",
+      "origin_x": 33,
+      "origin_y": 70,
+      "origin_z": 8,
+      "width": 4,
+      "length": 4,
+      "height": 4,
+      "block_count": 0,
+      "built_at": 1773268535.369947
+    },
+    {
+      "name": "structure",
+      "origin_x": 25,
+      "origin_y": 69,
+      "origin_z": -35,
+      "width": 5,
+      "length": 5,
+      "height": 4,
+      "block_count": 0,
+      "built_at": 1773270973.231455
+    },
+    {
+      "name": "house",
+      "origin_x": 5,
+      "origin_y": 64,
+      "origin_z": 5,
+      "width": 5,
+      "length": 5,
+      "height": 4,
+      "block_count": 0,
+      "built_at": 1773271352.0576751
+    },
+    {
+      "name": "pillar",
+      "origin_x": 25,
+      "origin_y": 70,
+      "origin_z": -28,
+      "width": 1,
+      "length": 1,
+      "height": 4,
+      "block_count": 0,
+      "built_at": 1773271526.0328262
+    }
+  ]
+}

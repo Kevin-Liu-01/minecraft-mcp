@@ -2,6 +2,8 @@
 
 LAN-oriented Minecraft MCP stack: Python MCP server + Node Mineflayer bridge. Control a bot via the Dedalus agent or in-game **chat as natural language commands**.
 
+**New in v2:** Skill library, multi-step planning, persistent world memory, freeform building from natural language, smelting/furnace automation, error recovery with retry, and a creative/survival mode toggle.
+
 ---
 
 ## Quick start (one command)
@@ -21,25 +23,30 @@ Get everything running and command the bot from **in-game chat**:
    export DEDALUS_API_KEY=your_key_here
    uv run python run_live_chat.py --join-host 192.168.68.70 --join-port 61246
    ```
-   Use your machine’s LAN IP for `--join-host` (or `127.0.0.1` if the world is on this machine). Use the port shown in-game for `--join-port`. Put `MINECRAFT_PORT` and `MINECRAFT_HOST` in `.env` to avoid passing `--join-*` each time.
+   Use your machine's LAN IP for `--join-host` (or `127.0.0.1` if the world is on this machine). Use the port shown in-game for `--join-port`. Put `MINECRAFT_PORT` and `MINECRAFT_HOST` in `.env` to avoid passing `--join-*` each time.
 
 4. **In Minecraft chat**, type natural language commands. Examples:
    - `mine 10 dirt`
    - `go to the tree`
-   - `build a small pillar`
+   - `build a 5x5 house with oak planks`
    - `attack the zombie`
-
-The agent uses your local MCP server by default (`http://127.0.0.1:8000/mcp`). If you run in a setup where the agent cannot reach localhost (e.g. agent in the cloud), set `AGENT_MCP_URL` to a public URL (e.g. from `ngrok http 8000`).
+   - `switch to creative mode and give me 64 diamonds`
+   - `create a plan to get iron tools`
 
 ---
 
 ## What this project is
 
-- **Python MCP server** – Exposes Minecraft bot actions as MCP tools (move, mine, place, attack, craft, chat, etc.). Built on [dedalus_mcp](https://github.com/dedalus-labs/dedalus-mcp-python).
-- **Node bridge** – Connects to a real Minecraft (Java) client via [Mineflayer](https://github.com/PrismarineJS/mineflayer). Handles pathfinding (including breaking/placing blocks in the way), digging, placing, combat, inventory.
+- **Python MCP server** – Exposes 60+ Minecraft bot actions as MCP tools (move, mine, place, attack, craft, chat, plan, remember, build, smelt, and more). Built on [dedalus_mcp](https://github.com/dedalus-labs/dedalus-mcp-python).
+- **Node bridge** – Connects to a real Minecraft (Java) client via [Mineflayer](https://github.com/PrismarineJS/mineflayer). Handles pathfinding (including breaking/placing blocks in the way), digging, placing, combat, inventory, smelting, and slash commands.
 - **Simulation mode** – Test the stack without a live game (simulated world and tools).
-
-Result: point the Dedalus Python SDK (or any MCP client) at your local MCP server and control the bot; or use **in-game chat as commands** with the chat-driven agent.
+- **Skill library** – Save and reuse multi-step tool sequences (Voyager-inspired).
+- **Multi-step planner** – Decompose goals into checkpointed execution plans.
+- **World memory** – Persistent storage of locations, resources, and structures across sessions.
+- **Creative/Survival modes** – Creative mode unlocks teleport, give, fill, summon, time, weather. Survival mode keeps legit pathfinding and resource gathering.
+- **Freeform building** – Describe structures in natural language (house, tower, bridge, farm, stairs, fence, pool, platform, pillar).
+- **Error recovery** – Automatic retries with alternative positions and resources when tools fail.
+- **Autonomous survival mode** – Say "start autonomous" in chat and the bot plays the game on its own (inspect → plan → execute → learn). Say "stop" to return to command mode.
 
 ---
 
@@ -49,7 +56,7 @@ Result: point the Dedalus Python SDK (or any MCP client) at your local MCP serve
 - **Node 20+**, **npm 10+**
 - **Minecraft Java Edition** for real LAN play (world opened to LAN, or a server)
 - **Dedalus API key** for the agent (`DEDALUS_API_KEY` in `.env` or environment)
-- **ngrok** (or similar) if you want the cloud agent to respond to in-game chat (so it can reach your MCP server)
+- **ngrok** (or similar) if you want the cloud agent to respond to in-game chat
 
 ---
 
@@ -73,13 +80,12 @@ cp .env.example .env
 |----------|---------|-------------------|
 | `DEDALUS_API_KEY` | Dedalus API key (required for chat agent) | (required) |
 | `MINECRAFT_HOST` | Minecraft server host for `join_game` | `127.0.0.1` |
-| `MINECRAFT_PORT` | Minecraft server port (e.g. LAN port from “Open to LAN”) | `25565` → set to e.g. `61246` |
+| `MINECRAFT_PORT` | Minecraft server port (e.g. LAN port from "Open to LAN") | `25565` → set to e.g. `61246` |
 | `MINECRAFT_USERNAME` | Bot username in-game | `DedalusBot` |
-| `AGENT_MCP_URL` | MCP URL the agent uses. Default is local (`http://127.0.0.1:8000/mcp`). Set to a public URL (e.g. ngrok + `/mcp`) only if the agent runs in the cloud and cannot reach localhost. | (optional; local URL by default) |
-| `MCP_SERVER_URL` | Local MCP server URL for `run_tool.py`, `run_join_game.py`, etc. | `http://127.0.0.1:8000/mcp` |
+| `AGENT_MCP_URL` | MCP URL the agent uses. Default is local. Set to public URL for cloud agent. | (optional) |
+| `MCP_SERVER_URL` | Local MCP server URL for scripts | `http://127.0.0.1:8000/mcp` |
 | `DEDALUS_MODEL` | Model for the agent | `openai/gpt-5.2` |
-
-Scripts that accept `--join-host` / `--join-port` use these as defaults when you don’t pass the flag. The MCP server’s `join_game` tool also uses `MINECRAFT_HOST` and `MINECRAFT_PORT` when the tool is called without host/port.
+| `MINECRAFT_MCP_DATA_DIR` | Directory for persistent data (skills, memory, plans, session) | `.minecraft_mcp_data` |
 
 ---
 
@@ -87,34 +93,10 @@ Scripts that accept `--join-host` / `--join-port` use these as defaults when you
 
 ### 1. One command: bridge + MCP + join + chat agent
 
-Use this to get everything up and command the bot via chat:
-
 ```bash
 export DEDALUS_API_KEY=your_key_here
 uv run python run_live_chat.py --join-host YOUR_LAN_IP --join-port LAN_PORT --agent-mcp-url https://YOUR_NGROK_URL/mcp
 ```
-
-- **Bridge** and **MCP server** start in the same process (logs prefixed with `[bridge]` / `[mcp]`).
-- **Join game** is called automatically with `--join-host` and `--join-port`.
-- **Chat agent** runs and polls in-game chat; each new player message is sent to the Dedalus agent as a goal.
-
-Options:
-
-- `--join-host` – Minecraft server host (default: `MINECRAFT_HOST` or `127.0.0.1`).
-- `--join-port` – Minecraft server port (default: `MINECRAFT_PORT` or `25565`). For “Open to LAN”, use the in-game port.
-- `--agent-mcp-url` – MCP URL the Dedalus agent uses (must be reachable from the internet for chat; e.g. ngrok URL + `/mcp`).
-- `--username` – Bot username (default: `DedalusBot`).
-- `--auth` – `microsoft` or `offline`.
-- `--poll-interval` – Seconds between chat polls (default: 8).
-- `--continue-after` – After this many agent runs, prompt “Continue? (y/n)” so you can stop before hitting rate limits (default: 100; use 0 to never prompt).
-- `--rate-limit-wait` – When a rate-limit error is detected, wait this many seconds then offer to continue (default: 60).
-- `--bridge-port`, `--server-port` – Ports for bridge (8787) and MCP server (8000).
-
-If you don’t set `DEDALUS_API_KEY`, the launcher still starts the bridge and MCP server and tries to join; the chat agent won’t run. For local use, the default MCP URL is `http://127.0.0.1:8000/mcp`. Without chat, use `run_join_game.py` and `run_tool.py` from another terminal.
-
-**Rate limits:** The chat agent counts how many times it has run the Dedalus agent. After `--continue-after` runs (default 100), it asks “Continue? (y/n)” so you can stop or keep going. If the API returns a rate-limit (or 429) error, it will prompt to wait (e.g. 60s) and try again. This lets the agent stay running while staying within reason.
-
----
 
 ### 2. Manual: bridge + MCP server in separate terminals
 
@@ -130,171 +112,263 @@ npm --prefix bridge run start -- --listen-host 0.0.0.0 --listen-port 8787
 uv run python -m minecraft_dedalus_mcp.server --host 0.0.0.0 --port 8000 --bridge-url http://127.0.0.1:8787
 ```
 
-**Terminal 3 – Join game** (world must be open to LAN)
+**Terminal 3 – Join game**
 
 ```bash
 uv run python run_join_game.py --host YOUR_LAN_IP --port LAN_PORT
 ```
 
-**Terminal 4 (optional) – Chat-driven agent**
-
-```bash
-export DEDALUS_API_KEY=your_key_here
-uv run python run_chat_agent.py --server-url https://YOUR_NGROK_URL/mcp
-```
-
----
-
 ### 3. Simulation mode (no Minecraft)
-
-Runs a simulated bridge + MCP server + one-off agent run (no real game):
 
 ```bash
 export DEDALUS_API_KEY=your_key_here
 uv run minecraft-dedalus-run-sim
 ```
 
-Use `--skip-agent` to only start the stack and verify readiness.
+---
+
+## MCP Tools (60+)
+
+### Core Actions
+
+| Category | Tools |
+|----------|-------|
+| **Connection** | `join_game`, `leave_game` |
+| **Status** | `get_bot_status`, `inspect_world`, `get_block_at` |
+| **Movement** | `go_to_known_location`, `look_at`, `jump`, `set_sprint`, `set_sneak`, `stop_movement`, `safe_move_to` |
+| **Mining** | `mine_resource`, `dig_block` |
+| **Building** | `place_block`, `use_block`, `build_structure`, `build_from_description` |
+| **Crafting** | `craft_items`, `smelt_item` |
+| **Inventory** | `equip_item`, `drop_item`, `eat`, `auto_eat`, `ensure_has_item` |
+| **Entities** | `attack_entity`, `mount_entity`, `dismount`, `interact_entity` |
+| **Other** | `sleep`, `wake`, `collect_items`, `fish`, `send_chat`, `read_chat` |
+
+### Planning & Intelligence
+
+| Category | Tools |
+|----------|-------|
+| **Planning** | `create_plan`, `get_plan_status`, `get_next_plan_step`, `complete_plan_step`, `fail_plan_step`, `list_plans` |
+| **Skills** | `save_skill`, `find_skills`, `get_skill`, `list_skills`, `record_skill_success`, `remove_skill` |
+| **Memory** | `remember_location`, `recall_locations`, `find_nearest_location`, `remember_resource`, `find_resource`, `get_memory_summary` |
+| **Session** | `get_session_summary`, `get_recent_actions`, `get_recent_failures` |
+| **Recovery** | `execute_with_recovery` |
+| **Playbook** | `recommend_next_goal` |
+
+### Creative Mode (requires `set_mode('creative')`)
+
+| Tool | Description |
+|------|-------------|
+| `set_mode` | Switch between `creative` and `survival` |
+| `get_mode` | Check current mode |
+| `run_command` | Execute any slash command |
+| `teleport` | Instant teleport to (x, y, z) |
+| `give_item` | Give items to bot |
+| `fill_blocks` | Fill a volume with blocks |
+| `set_time` | Set time of day |
+| `set_weather` | Set weather |
+| `summon_entity` | Spawn entities |
+| `kill_entities` | Kill entities by selector |
 
 ---
 
-## Commanding the bot
+## Freeform Building
 
-### From in-game chat (with chat agent running)
-
-Type in Minecraft chat as a **different player** (not the bot). The bot will:
-
-- **Acknowledge** in chat (e.g. `On it! [mine 10 dirt]`) when it picks up your message.
-- **Log progress** in chat (e.g. `I'm doing this! [mining oak_log]`, `Moving to (10, 70, 0)`, `Done [mined 10 dirt]`) so you see what it’s doing.
-- **Say when done** (e.g. `Done! [mine 10 dirt]`). If it hits a rate limit it may post `Pausing (rate limit), back in 60s...`.
-
-Examples of commands to type:
-
-- `mine 10 dirt`
-- `go to 100 70 200`
-- `build a 3x3 pillar`
-- `attack the zombie`
-- `craft oak_planks`
-
-The agent maps these to MCP tools (e.g. `mine_resource`, `go_to_known_location`, `build_structure`, `attack_entity`, `craft_items`).
-
-### From the CLI (`run_tool.py`)
-
-With the bridge and MCP server (and bot) running:
+Describe a structure in natural language with `build_from_description`:
 
 ```bash
-uv run python run_tool.py get_bot_status
-uv run python run_tool.py inspect_world '{"radius": 16}'
-uv run python run_tool.py go_to_known_location '{"x": 0, "y": 70, "z": 0, "range": 2}'
-uv run python run_tool.py mine_resource '{"name": "dirt", "count": 10}'
-uv run python run_tool.py dig_block '{"x": 1, "y": 71, "z": 0}'
-uv run python run_tool.py place_block '{"block": "cobblestone", "x": 2, "y": 72, "z": 0}'
-uv run python run_tool.py attack_entity '{"name": "zombie", "count": 1}'
-uv run python run_tool.py send_chat '{"message": "hello"}'
+uv run python run_tool.py build_from_description '{"description": "a 7x7x5 house with a door", "origin_x": 10, "origin_y": 64, "origin_z": 10, "material": "oak_planks"}'
+```
+
+**Supported structure types:** house, cottage, cabin, tower, turret, wall, bridge, platform, floor, stairs, steps, fence, enclosure, pool, farm, pillar.
+
+**Dimensions:** Include `WxLxH` (e.g. `5x5x4`) in the description for custom sizes. Defaults to 5x5x4.
+
+---
+
+## Multi-Step Planning
+
+Create plans that decompose goals into tool-call steps:
+
+```bash
+# Create a plan
+uv run python run_tool.py create_plan '{"goal": "get stone tools"}'
+
+# Check status
+uv run python run_tool.py get_plan_status '{"plan_id": "abc123"}'
+
+# Get next step to execute
+uv run python run_tool.py get_next_plan_step '{"plan_id": "abc123"}'
+```
+
+**Built-in plan templates:** `gather_wood`, `get_stone_tools`, `get_iron_tools`, `build_shelter`, `hunt_food`, `explore_area`, `prepare_nether`.
+
+---
+
+## Skill Library
+
+Save reusable tool sequences and retrieve them by keyword:
+
+```bash
+# Save a skill
+uv run python run_tool.py save_skill '{"name": "early_game", "description": "Get wood, craft tools", "tool_sequence": "[{\"tool\": \"mine_resource\", \"args\": {\"name\": \"oak_log\", \"count\": 4}}]", "tags": "early,tools"}'
+
+# Find skills
+uv run python run_tool.py find_skills '{"query": "wood crafting"}'
 ```
 
 ---
 
-## MCP tools (reference)
+## Creative Mode
 
-Movement and world:
+Switch to creative mode to use god-mode commands:
 
-- **join_game** – Connect to a Minecraft server (host, port, username, auth).
-- **leave_game** – Disconnect.
-- **get_bot_status** – Position, health, food, inventory, nearby entities.
-- **inspect_world** – Nearby blocks and entities (radius).
-- **go_to_known_location** – Move to (x, y, z). Pathfinding can **break blocks and place scaffolding** (dirt/cobblestone) to reach the goal.
+```bash
+# Switch to creative
+uv run python run_tool.py set_mode '{"mode": "creative"}'
 
-Blocks and items:
+# Teleport instantly
+uv run python run_tool.py teleport '{"x": 100, "y": 80, "z": 100}'
 
-- **mine_resource** – Break and collect blocks by name (e.g. `oak_log`, `dirt`).
-- **dig_block** – Break one block at (x, y, z).
-- **place_block** – Place a block from inventory at (x, y, z).
-- **get_block_at** – Block name at (x, y, z).
-- **use_block** – Activate block at (x, y, z) (door, button, chest, etc.).
-- **craft_items** – Craft item by name (e.g. `oak_planks`, `crafting_table`).
+# Give items
+uv run python run_tool.py give_item '{"item": "diamond_block", "count": 64}'
 
-Inventory and player:
+# Fill a volume
+uv run python run_tool.py fill_blocks '{"x1": 0, "y1": 64, "z1": 0, "x2": 10, "y2": 64, "z2": 10, "block": "gold_block"}'
 
-- **equip_item** – Equip item (hand, head, torso, legs, feet).
-- **drop_item** – Drop item from inventory.
-- **eat** – Consume food.
+# Switch back to survival
+uv run python run_tool.py set_mode '{"mode": "survival"}'
+```
 
-Movement and look:
-
-- **look_at** – Look at (x, y, z).
-- **jump** – Jump once.
-- **set_sprint** / **set_sneak** – Sprint or sneak on/off.
-- **stop_movement** – Stop pathfinding.
-
-Entities:
-
-- **attack_entity** – Attack by entity name (e.g. `zombie`, `player`).
-- **mount_entity** / **dismount** – Mount/dismount entity (horse, boat, etc.).
-- **interact_entity** – Interact (e.g. villager).
-
-Other:
-
-- **sleep** / **wake** – Sleep in bed at (x, y, z) / wake.
-- **collect_items** – Pick up nearby dropped items.
-- **fish** – Use fishing rod.
-- **send_chat** / **read_chat** – Send or read in-game chat.
-- **build_structure** – Build preset (pillar, wall, bridge, hut) with material at origin.
-- **recommend_next_goal** – Get a suggested next survival/building goal.
+Creative tools return errors if called while in survival mode. The bot retains its pathfinding, planning, memory, and skill capabilities in both modes.
 
 ---
 
-## Scripts in this repo
+## Autonomous Survival Mode
 
-| Script | Purpose |
-|--------|---------|
-| **run_live_chat.py** | One command: start bridge, MCP, join game, run chat agent. Command the bot via in-game chat. |
-| **run_chat_agent.py** | Poll chat and run the Dedalus agent on each new player message (requires bridge + MCP + bot in game). |
-| **run_join_game.py** | Call `join_game` once (host/port via args or `MINECRAFT_HOST`, `MINECRAFT_PORT`). |
-| **run_tool.py** | Call any MCP tool from the CLI (e.g. `run_tool.py mine_resource '{"name": "dirt", "count": 5}'`). |
-| **run_agent_live.py** | Run the Dedalus agent once with a goal (no chat polling). |
-| **run_demo_move.py** | Demo: move the bot 5 blocks east. |
-| **run_demo_break.py** | Demo: break one nearby block. |
-| **run_demo_attack_player.py** | Demo: attack another player until they’re gone. |
+The bot can play the game on its own — proactively inspecting the world, setting goals, planning, executing, and learning. It only activates when you tell it to, and stops on command.
+
+### From in-game chat
+
+```
+start autonomous     → bot starts playing on its own
+stop                 → bot stops and waits for commands
+mine 10 dirt         → any direct command also stops autonomous mode
+start autonomous     → resume autonomous play
+```
+
+Trigger phrases: `start autonomous`, `play on your own`, `survive`, `do your thing`, `autoplay`.
+Stop phrases: `stop`, `pause`, `halt`, `wait`, `come here`.
+
+### How it works
+
+Each autonomous cycle:
+1. **Inspect** — calls `recommend_next_goal` to decide what to do
+2. **Plan** — the LLM agent sees the goal + all 60+ tools and decides its approach
+3. **Execute** — runs up to 25 tool calls per cycle (mine, craft, build, fight, smelt, etc.)
+4. **Learn** — saves locations, resources, skills from successful sequences
+5. **Repeat** — waits 5 seconds, then starts the next cycle
+
+The bot announces what it's doing in chat so you can watch. Rate limits are handled automatically (pauses and retries).
+
+### Standalone demo (no chat polling)
+
+```bash
+uv run python run_demo_autonomous.py
+```
+
+Press Ctrl+C to stop.
 
 ---
 
-## Troubleshooting
+## Demo Scripts
 
-- **Agent says “MCP server unavailable”**  
-  The Dedalus agent runs in the cloud and must reach your MCP server. Use a public URL (e.g. **ngrok**: `ngrok http 8000`) and pass `--agent-mcp-url https://YOUR_NGROK_URL/mcp` to `run_live_chat.py` or `run_chat_agent.py`.
+| Script | What it demos |
+|--------|---------------|
+| **run_demo_autonomous.py** | Autonomous survival: bot plays on its own until stopped |
+| **run_demo_skill_library.py** | Save, search, and retrieve reusable skills |
+| **run_demo_planning.py** | Create plans, execute steps, track progress |
+| **run_demo_memory.py** | Remember locations, resources; recall across sessions |
+| **run_demo_freeform_build.py** | Build houses, towers, bridges, farms from descriptions |
+| **run_demo_smelt.py** | Furnace smelting (raw iron → iron ingot) |
+| **run_demo_error_recovery.py** | Auto-retry with alternative positions/resources |
+| **run_demo_creative.py** | Creative mode commands: teleport, give, fill, summon |
+| **run_demo_full_agent.py** | Full workflow: plan → execute → remember → save skill → build |
+| **run_demo_move.py** | Move the bot 5 blocks east |
+| **run_demo_break.py** | Break one nearby block |
+| **run_demo_attack_player.py** | Attack another player until they're gone |
 
-- **ENETUNREACH or ECONNREFUSED when joining**  
-  Wrong host/port or the game isn’t open to LAN. Use your machine’s LAN IP and the port shown in-game. For “Open to LAN” on the same machine, try `--join-host 192.168.x.x` (your LAN IP) and the in-game port.
+Run any demo (with bridge + MCP server running):
 
-- **go_to_known_location: “Cannot read properties of undefined (reading 'GoalNear')”**  
-  Fixed in the bridge (pathfinder ESM default export). Ensure you have the latest bridge code.
+```bash
+uv run python run_demo_skill_library.py
+uv run python run_demo_creative.py
+uv run python run_demo_full_agent.py
+```
 
-- **mine_resource returns mined: 0**  
-  No matching block in range, or block name doesn’t match your version. Use `inspect_world` to see block names; for 1.20+ use e.g. `oak_log`, `dirt`.
+---
 
-- **Chat commands don’t do anything**  
-  Ensure the chat agent is running with a **public** MCP URL (`--agent-mcp-url` with ngrok). Set `DEDALUS_API_KEY`. Messages must be from another player (not the bot).
+## Persistent Data
+
+The MCP server stores data in `MINECRAFT_MCP_DATA_DIR` (default `.minecraft_mcp_data/`):
+
+| File | Contents |
+|------|----------|
+| `skills.json` | Saved skill library |
+| `world_memory.json` | Locations, resources, structures |
+| `session_history.json` | Action log (last 500 actions) |
+| `plans.json` | Task plans with step status |
+
+Data persists across server restarts. Delete the directory to start fresh.
 
 ---
 
 ## Project layout
 
 ```
-bridge/                 Node Mineflayer bridge (real + simulate)
-src/minecraft_dedalus_mcp/   MCP server, bridge client, playbook, agent_demo
-run_live_chat.py         One-command launcher (bridge + MCP + join + chat agent)
-run_chat_agent.py        Chat polling + Dedalus agent
-run_join_game.py         Join game once
-run_tool.py              Call any MCP tool from CLI
-docs/research.md         Research notes
-tests/                   Pytest (e2e with sim bridge)
+bridge/                         Node Mineflayer bridge (real + simulate)
+src/minecraft_dedalus_mcp/
+  ├── server.py                 MCP server + 60+ tool definitions
+  ├── bridge_client.py          HTTP client to bridge
+  ├── models.py                 Pydantic models
+  ├── constants.py              Domain constants
+  ├── playbook.py               Survival goal recommendations
+  ├── skills/
+  │   └── store.py              Skill library (save, find, replay)
+  ├── planning/
+  │   ├── planner.py            Multi-step task planner with checkpoints
+  │   └── blueprints.py         Freeform building (NL → block plans)
+  ├── memory/
+  │   ├── world_memory.py       Persistent world knowledge
+  │   └── session.py            Session action history
+  ├── modes/
+  │   ├── base.py               Game mode manager
+  │   ├── creative.py           Creative mode actions
+  │   └── survival.py           Survival mode helpers
+  └── recovery/
+      └── retry.py              Error recovery with retry strategies
+run_live_chat.py                One-command launcher
+run_chat_agent.py               Chat polling + agent
+run_demo_*.py                   Demo scripts for each capability
+tests/                          Pytest (e2e with sim bridge)
+docs/research.md                Research notes
 ```
+
+---
+
+## Troubleshooting
+
+- **Agent says "MCP server unavailable"** — Use ngrok and pass `--agent-mcp-url`.
+- **ENETUNREACH or ECONNREFUSED** — Wrong host/port or game isn't open to LAN.
+- **mine_resource returns mined: 0** — Block name mismatch. Use `inspect_world` to check names.
+- **Creative tools return "requires creative mode"** — Call `set_mode('creative')` first.
+- **Smelting fails** — Ensure a furnace is placed nearby and fuel + items are in inventory.
 
 ---
 
 ## Limitations
 
 - Simulation mode tests tool flow, not real Mineflayer physics.
-- Real bridge supports core survival actions but is not a full “Voyager-style” stack.
-- Beating the game is expressed as a playbook and agent workflow, not a single guaranteed run.
+- Freeform building generates deterministic blueprints from keywords; truly novel shapes require extending `blueprints.py`.
+- Creative mode requires the bot to have operator permissions on the server for slash commands.
+- Smelting waits a fixed time for output; very large batches may time out.
+- Skill library uses keyword search, not embeddings (simple and fast, but less semantic).

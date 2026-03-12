@@ -120,10 +120,7 @@ def recommend_goal(status: BotStatus, objective: str = "beat-minecraft") -> Goal
                     "Smelt or otherwise convert it to iron_ingot.",
                     "Craft iron_pickaxe.",
                 ],
-                suggested_tools=["mine_resource", "craft_items", "inspect_world"],
-                blockers=[
-                    "The current bridge does not automate furnace use yet; smelting may need server-side help or manual preparation."
-                ],
+                suggested_tools=["mine_resource", "smelt_item", "craft_items", "inspect_world"],
             )
         return GoalRecommendation(
             phase="craft-iron-pickaxe",

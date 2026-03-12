@@ -1,0 +1,52 @@
+[
+  {
+    "name": "early_game_setup",
+    "description": "Complete early game: wood, planks, sticks, stone tools",
+    "tags": [
+      "early-game",
+      "tools",
+      "essential"
+    ],
+    "tool_sequence": [
+      {
+        "tool": "mine_resource",
+        "args": {
+          "name": "oak_log",
+          "count": 4
+        }
+      },
+      {
+        "tool": "craft_items",
+        "args": {
+          "item": "oak_planks",
+          "count": 4
+        }
+      },
+      {
+        "tool": "craft_items",
+        "args": {
+          "item": "stick",
+          "count": 4
+        }
+      },
+      {
+        "tool": "mine_resource",
+        "args": {
+          "name": "cobblestone",
+          "count": 11
+        }
+      },
+      {
+        "tool": "craft_items",
+        "args": {
+          "item": "stone_pickaxe",
+          "count": 1
+        }
+      }
+    ],
+    "success_count": 0,
+    "failure_count": 0,
+    "created_at": 1773271351.993531,
+    "last_used": null
+  }
+]
