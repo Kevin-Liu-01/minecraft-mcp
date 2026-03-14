@@ -189,7 +189,10 @@ def build_server(bridge: BridgeClient) -> MCPServer:
     @tool(
         description=(
             "PRIMARY mining tool — mines blocks by name (e.g. 'dirt', 'oak_log', 'cobblestone', 'iron_ore'). "
-            "Auto-finds nearby blocks, auto-equips best tool, collects drops. Use this for ALL mining tasks. "
+            "Auto-finds nearby blocks, auto-equips best tool from inventory, collects drops. "
+            "IMPORTANT: You MUST have the right pickaxe tier in inventory or the block won't drop anything "
+            "(wooden pickaxe for stone/coal, stone for iron, iron for diamond/gold/redstone). "
+            "If you lack the tool, craft it FIRST with make_tools(). "
             "Do NOT use dig_block unless you need to dig at an exact coordinate."
         )
     )
@@ -423,7 +426,9 @@ def build_server(bridge: BridgeClient) -> MCPServer:
     @tool(
         description=(
             "Auto-craft the best tool set from available inventory materials in ONE call. "
-            "Crafts pickaxe, axe, sword, shovel. Pass material (diamond, iron, stone, wooden) or auto-detect."
+            "Crafts pickaxe, axe, sword, shovel. Pass material (diamond, iron, stone, wooden) or auto-detect. "
+            "Requires: sticks + material (planks/cobblestone/iron_ingot/diamond) in inventory, "
+            "and a crafting_table placed nearby. Craft planks and sticks first if needed."
         )
     )
     async def make_tools(material: str = "") -> str:

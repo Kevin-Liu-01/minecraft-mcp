@@ -34,7 +34,7 @@ async def main() -> None:
         run_agent_fn=run_agent,
         model=os.environ.get("DEDALUS_MODEL", "openai/gpt-5-nano-mini"),
         cycle_delay=5.0,
-        max_steps_per_cycle=25,
+        max_steps_per_cycle=0,
         verbose=True,
     )
 

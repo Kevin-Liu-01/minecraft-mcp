@@ -103,6 +103,12 @@ DASHBOARD_HTML = r"""<!DOCTYPE html>
 
   .chat-msg { padding: 3px 0; border-bottom: 1px solid var(--border); }
   .chat-msg .sender { color: var(--accent); font-weight: 600; }
+  .chat-msg .sender.system { color: #8b949e; font-style: italic; }
+  .chat-msg .sender.self { color: #388bfd66; }
+  .chat-msg .msg-type { font-size: 9px; text-transform: uppercase; letter-spacing: .5px; padding: 0 4px; border-radius: 2px; margin-right: 4px; }
+  .chat-msg .msg-type.player { background: #238636aa; color: var(--green); }
+  .chat-msg .msg-type.system { background: #30363d; color: #8b949e; }
+  .chat-msg .msg-type.self { background: #1f6feb22; color: #388bfd66; }
   .chat-msg .time { color: var(--text2); font-size: 11px; margin-left: 6px; }
 
   .event { padding: 4px 0; border-bottom: 1px solid var(--border); }
@@ -176,7 +182,9 @@ function renderChat(msgs){
   if(!msgs||!msgs.length)return '<div style="color:var(--text2)">No messages</div>';
   return msgs.slice(-25).map(m=>{
     let t=m.timestamp?new Date(m.timestamp).toLocaleTimeString('en',{hour12:false,hour:'2-digit',minute:'2-digit'}):'';
-    return `<div class="chat-msg"><span class="sender">${esc(m.sender||'?')}</span><span class="time">${t}</span><br>${esc(m.message||'')}</div>`;
+    let tp=m.type||'system';
+    let senderCls=tp==='system'?' system':tp==='self'?' self':'';
+    return `<div class="chat-msg"><span class="msg-type ${tp}">${tp}</span><span class="sender${senderCls}">${esc(m.sender||'?')}</span><span class="time">${t}</span><br>${esc(m.message||'')}</div>`;
   }).reverse().join('');
 }
 

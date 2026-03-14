@@ -23,7 +23,7 @@ Get everything running and command the bot from **in-game chat**:
    export DEDALUS_API_KEY=your_key_here
    uv run python run_live_chat.py --join-host 192.168.68.70 --join-port 61246
    ```
-   Use your machine's LAN IP for `--join-host` (or `127.0.0.1` if the world is on this machine). Use the port shown in-game for `--join-port`. Put `MINECRAFT_PORT` and `MINECRAFT_HOST` in `.env` to avoid passing `--join-*` each time.
+   Use your machine's LAN IP for `--join-host` (or `127.0.0.1` if the world is on this machine). Use the port shown in-game for `--join-port`. Put `MINECRAFT_PORT` and `MINECRAFT_HOST` in `.env` to avoid passing `--join-*` each time. Add `--auth offline` to skip the Microsoft login (recommended for LAN worlds).
 
 4. **In Minecraft chat**, type natural language commands. Examples:
    - `mine 10 dirt`
@@ -357,11 +357,26 @@ docs/research.md                Research notes
 
 ## Troubleshooting
 
+- **Microsoft login prompt blocks the bot** — Pass `--auth offline` to skip Microsoft authentication entirely. This works for LAN worlds and offline-mode servers. See [Offline auth](#offline-auth-skip-microsoft-login) below.
 - **Agent says "MCP server unavailable"** — Use ngrok and pass `--agent-mcp-url`.
 - **ENETUNREACH or ECONNREFUSED** — Wrong host/port or game isn't open to LAN.
 - **mine_resource returns mined: 0** — Block name mismatch. Use `inspect_world` to check names.
 - **Creative tools return "requires creative mode"** — Call `set_mode('creative')` first.
 - **Smelting fails** — Ensure a furnace is placed nearby and fuel + items are in inventory.
+
+### Offline auth (skip Microsoft login)
+
+By default, `run_live_chat.py` and `run_join_game.py` use `--auth microsoft`, which triggers a Microsoft account login flow. If you're playing on a **LAN world** or an **offline-mode server**, you can skip this entirely:
+
+```bash
+# One-command launcher
+uv run python run_live_chat.py --auth offline --join-host 192.168.68.70 --join-port 61246
+
+# Manual join
+uv run python run_join_game.py --auth offline --host 192.168.68.70 --port 61246
+```
+
+The `--auth offline` flag tells Mineflayer to connect without a Microsoft/Mojang account. The bot will join with whatever `--username` you specify (default `DedalusBot`). This is the easiest way to get started on a local LAN world.
 
 ---
 

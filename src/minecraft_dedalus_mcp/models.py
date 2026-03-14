@@ -27,6 +27,7 @@ class EntitySnapshot(BaseModel):
 class ChatEntry(BaseModel):
     sender: str
     message: str
+    type: str = "system"
     timestamp: str
 
 

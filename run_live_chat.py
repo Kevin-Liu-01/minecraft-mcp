@@ -207,6 +207,7 @@ async def _run(args: argparse.Namespace) -> None:
                 chat_limit=args.chat_limit,
                 continue_after=args.continue_after,
                 rate_limit_wait_sec=args.rate_limit_wait,
+                max_steps=args.max_steps,
             )
     finally:
         if mcp_process is not None and mcp_logs is not None:
@@ -254,6 +255,12 @@ def main() -> None:
         type=float,
         default=60.0,
         help="When rate limit is detected, wait this many seconds before offering to continue.",
+    )
+    p.add_argument(
+        "--max-steps",
+        type=int,
+        default=0,
+        help="Max agent steps per task (0 = unlimited).",
     )
     args = p.parse_args()
     if not args.agent_mcp_url:

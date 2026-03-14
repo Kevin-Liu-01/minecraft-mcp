@@ -14,6 +14,8 @@ from typing import Any, Callable, Coroutine
 
 from dedalus_mcp.client import MCPClient
 
+from minecraft_dedalus_mcp.agent.cancellation import AgentCancelled, CancellationToken
+
 AUTONOMOUS_GOAL_PREFIX = (
     "You are playing Minecraft autonomously. No one told you what to do — decide for yourself based on the recommended goal below. "
     "Use create_plan if the goal has multiple steps, then execute each step. "
@@ -62,7 +64,7 @@ class AutonomousLoop:
         run_agent_fn: Callable[..., Coroutine[Any, Any, None]],
         model: str = "",
         cycle_delay: float = 5.0,
-        max_steps_per_cycle: int = 25,
+        max_steps_per_cycle: int = 0,
         verbose: bool = True,
     ) -> None:
         self._mcp_url = mcp_url
@@ -74,7 +76,7 @@ class AutonomousLoop:
 
         self._running = asyncio.Event()
         self._stop_requested = asyncio.Event()
-        self._cancel_event = asyncio.Event()
+        self._cancel_token = CancellationToken()
         self._task: asyncio.Task[None] | None = None
         self._cycles_completed = 0
         self._last_goal = ""
@@ -95,13 +97,13 @@ class AutonomousLoop:
         if self._running.is_set():
             return
         self._stop_requested.clear()
-        self._cancel_event.clear()
+        self._cancel_token = CancellationToken()
         self._running.set()
         self._task = asyncio.create_task(self._loop())
 
     def stop(self) -> None:
         self._stop_requested.set()
-        self._cancel_event.set()
+        self._cancel_token.cancel()
         self._running.clear()
 
     async def wait_until_stopped(self) -> None:
@@ -162,22 +164,21 @@ class AutonomousLoop:
                     break
 
                 try:
-                    self._cancel_event.clear()
+                    self._cancel_token.reset()
                     await self._run_agent(
                         server_url=self._mcp_url,
                         model=self._model,
                         goal=full_goal,
                         max_steps=self._max_steps,
                         verbose=self._verbose,
-                        cancel_event=self._cancel_event,
+                        cancel_event=self._cancel_token,
                     )
                     self._cycles_completed += 1
+                except AgentCancelled:
+                    if self._verbose:
+                        print("[autonomous] Cycle cancelled")
+                    break
                 except Exception as exc:
-                    from minecraft_dedalus_mcp.agent_demo import AgentCancelled
-                    if isinstance(exc, AgentCancelled):
-                        if self._verbose:
-                            print("[autonomous] Cycle cancelled")
-                        break
                     error_msg = str(exc).lower()
                     if "rate limit" in error_msg or "429" in error_msg:
                         if self._verbose:

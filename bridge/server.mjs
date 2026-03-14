@@ -100,6 +100,15 @@ function buildPlanFromPreset({
 }
 
 
+// Chat message types:
+//   "player"  – message from another player in the game
+//   "system"  – server/game notification (death, achievement, join/leave, etc.)
+//   "self"    – message sent by this bot
+const CHAT_TYPE_PLAYER = "player";
+const CHAT_TYPE_SYSTEM = "system";
+const CHAT_TYPE_SELF = "self";
+
+
 class SimulationSession {
   constructor() {
     this.connected = false;
@@ -157,8 +166,8 @@ class SimulationSession {
     }
   }
 
-  _pushChat(sender, message) {
-    this.chatLog.push({ sender, message, timestamp: nowIso() });
+  _pushChat(sender, message, type = CHAT_TYPE_SYSTEM) {
+    this.chatLog.push({ sender, message, type, timestamp: nowIso() });
     this.chatLog = this.chatLog.slice(-100);
   }
 
@@ -353,7 +362,7 @@ class SimulationSession {
   }
 
   async sendChat({ message }) {
-    this._pushChat(this.config?.username || "DedalusBot", message);
+    this._pushChat(this.config?.username || "DedalusBot", message, CHAT_TYPE_SELF);
     return {
       action: "send_chat",
       message,
@@ -561,8 +570,8 @@ class MineflayerSession {
       .sort((a, b) => a.item.localeCompare(b.item));
   }
 
-  _pushChat(sender, message) {
-    this.chatLog.push({ sender, message, timestamp: nowIso() });
+  _pushChat(sender, message, type = CHAT_TYPE_SYSTEM) {
+    this.chatLog.push({ sender, message, type, timestamp: nowIso() });
     this.chatLog = this.chatLog.slice(-100);
   }
 
@@ -589,16 +598,17 @@ class MineflayerSession {
 
     bot.on("chat", (username, message) => {
       if (username !== bot.username) {
-        this._pushChat(username, message);
+        this._pushChat(username, message, CHAT_TYPE_PLAYER);
       }
     });
 
-    bot.on("messagestr", (message) => {
-      this._pushChat("server", message);
+    bot.on("messagestr", (message, messagePosition) => {
+      if (messagePosition === "chat") return;
+      this._pushChat("server", message, CHAT_TYPE_SYSTEM);
     });
 
     bot.once("error", (error) => {
-      this._pushChat("error", error.message);
+      this._pushChat("error", error.message, CHAT_TYPE_SYSTEM);
     });
 
     await once(bot, "spawn");
@@ -622,7 +632,7 @@ class MineflayerSession {
       try {
         this.bot.quit();
       } catch (error) {
-        this._pushChat("error", error.message);
+        this._pushChat("error", error.message, CHAT_TYPE_SYSTEM);
       }
     }
     this.bot = null;
@@ -859,7 +869,6 @@ class MineflayerSession {
     }
 
     await this._autoEat();
-    await this._autoEquip(name);
 
     let mined = 0;
     while (mined < count) {
@@ -876,6 +885,7 @@ class MineflayerSession {
       const freshBlock = bot.blockAt(new Vec3(bx, by, bz));
       if (!freshBlock || freshBlock.name === "air") continue;
 
+      await this._autoEquip(name);
       try {
         await bot.dig(freshBlock, true);
         mined += 1;
@@ -989,6 +999,7 @@ class MineflayerSession {
     if (!fresh || fresh.name === "air") {
       throw new Error(`Block at ${x},${y},${z} is already gone.`);
     }
+    await this._autoEquip(fresh.name);
     await bot.dig(fresh, true);
     return {
       action: "dig_block",
@@ -1175,7 +1186,7 @@ class MineflayerSession {
   async sendChat({ message }) {
     const bot = this._requireBot();
     bot.chat(message);
-    this._pushChat(bot.username, message);
+    this._pushChat(bot.username, message, CHAT_TYPE_SELF);
     return {
       action: "send_chat",
       message,
@@ -1605,9 +1616,6 @@ class MineflayerSession {
       : LOG_NAMES;
     if (targetLogs.length === 0) throw new Error(`Unknown wood type: ${type}`);
 
-    await this._autoEquip("oak_log");
-
-    // build a combined matching function for all target log types
     const matchIds = new Set();
     for (const logName of targetLogs) {
       const blockInfo = this.registry.blocksByName[logName];
@@ -1632,6 +1640,7 @@ class MineflayerSession {
       const fresh = bot.blockAt(new Vec3(bx, by, bz));
       if (!fresh || fresh.name === "air") continue;
 
+      await this._autoEquip(fresh.name);
       try {
         await bot.dig(fresh, true);
         chopped++;
@@ -1645,6 +1654,7 @@ class MineflayerSession {
         const above = bot.blockAt(new Vec3(bx, by + dy, bz));
         if (!above || !LOG_NAMES.includes(above.name)) break;
         try {
+          await this._autoEquip(above.name);
           await bot.dig(above, true);
           chopped++;
         } catch (_) { break; }
@@ -1941,46 +1951,123 @@ class MineflayerSession {
 
   async makeTools({ material = "" }) {
     const bot = this._requireBot();
-    const inv = bot.inventory.items();
-    const invMap = {};
-    for (const i of inv) invMap[i.name] = (invMap[i.name] || 0) + i.count;
+
+    const _refreshInv = () => {
+      const m = {};
+      for (const i of bot.inventory.items()) m[i.name] = (m[i.name] || 0) + i.count;
+      return m;
+    };
+
+    const _craft = async (itemName, count, table) => {
+      const info = this.registry.itemsByName[itemName];
+      if (!info) return false;
+      const recipes = bot.recipesFor(info.id, null, 1, table || null);
+      if (!recipes || recipes.length === 0) return false;
+      await bot.craft(recipes[0], count, table || null);
+      return true;
+    };
+
+    let invMap = _refreshInv();
+
+    // Auto-craft planks from any logs if we lack planks
+    const LOG_NAMES = [
+      "oak_log", "birch_log", "spruce_log", "jungle_log",
+      "acacia_log", "dark_oak_log", "mangrove_log", "cherry_log",
+      "crimson_stem", "warped_stem",
+    ];
+    const PLANK_NAMES = [
+      "oak_planks", "birch_planks", "spruce_planks", "jungle_planks",
+      "acacia_planks", "dark_oak_planks", "mangrove_planks", "cherry_planks",
+      "crimson_planks", "warped_planks",
+    ];
+    const totalPlanks = PLANK_NAMES.reduce((s, p) => s + (invMap[p] || 0), 0);
+    if (totalPlanks < 8) {
+      for (const logName of LOG_NAMES) {
+        if ((invMap[logName] || 0) >= 1) {
+          const plankName = logName.replace(/_log$/, "_planks").replace(/_stem$/, "_planks");
+          const logsToConvert = Math.min(invMap[logName], 4);
+          try { await _craft(plankName, logsToConvert, null); } catch (_) {}
+          break;
+        }
+      }
+      invMap = _refreshInv();
+    }
+
+    // Auto-craft sticks if we lack them
+    if ((invMap["stick"] || 0) < 4) {
+      const anyPlank = PLANK_NAMES.find((p) => (invMap[p] || 0) >= 2);
+      if (anyPlank) {
+        try { await _craft("stick", 2, null); } catch (_) {}
+        invMap = _refreshInv();
+      }
+    }
 
     const TIERS = [
-      { name: "diamond", ingot: "diamond", plankNeeded: false },
-      { name: "iron", ingot: "iron_ingot", plankNeeded: false },
-      { name: "stone", ingot: "cobblestone", plankNeeded: false },
-      { name: "wooden", ingot: "oak_planks", plankNeeded: false },
+      { name: "diamond", ingot: "diamond" },
+      { name: "iron", ingot: "iron_ingot" },
+      { name: "stone", ingot: "cobblestone" },
+      { name: "wooden", ingot: "oak_planks" },
     ];
 
     const targetTier = material
       ? TIERS.find((t) => t.name === material.toLowerCase())
       : TIERS.find((t) => (invMap[t.ingot] || 0) >= 3);
 
-    if (!targetTier) throw new Error("No suitable materials for tools. Mine some resources first.");
+    if (!targetTier) {
+      const logs = LOG_NAMES.reduce((s, l) => s + (invMap[l] || 0), 0);
+      if (logs > 0) {
+        throw new Error(
+          `Have ${logs} logs but need planks. Logs were auto-converted — retry make_tools.`
+        );
+      }
+      throw new Error("No suitable materials for tools. Gather wood or mine cobblestone first.");
+    }
+
+    // Auto-place crafting table if none nearby
+    const craftingTableBlock = this.registry.blocksByName.crafting_table;
+    let table = craftingTableBlock
+      ? bot.findBlock({ matching: craftingTableBlock.id, maxDistance: 6 })
+      : null;
+
+    if (!table && (invMap["crafting_table"] || 0) > 0) {
+      const pos = bot.entity.position;
+      const placeX = Math.floor(pos.x) + 1;
+      const placeY = Math.floor(pos.y);
+      const placeZ = Math.floor(pos.z);
+      try {
+        await this.placeBlock({ block: "crafting_table", x: placeX, y: placeY, z: placeZ });
+        table = bot.blockAt(new Vec3(placeX, placeY, placeZ));
+      } catch (_) {}
+    }
+
+    if (!table && (invMap["crafting_table"] || 0) === 0) {
+      const anyPlank = PLANK_NAMES.find((p) => (invMap[p] || 0) >= 4);
+      if (anyPlank) {
+        try {
+          await _craft("crafting_table", 1, null);
+          invMap = _refreshInv();
+          const pos = bot.entity.position;
+          const placeX = Math.floor(pos.x) + 1;
+          const placeY = Math.floor(pos.y);
+          const placeZ = Math.floor(pos.z);
+          await this.placeBlock({ block: "crafting_table", x: placeX, y: placeY, z: placeZ });
+          table = bot.blockAt(new Vec3(placeX, placeY, placeZ));
+        } catch (_) {}
+      }
+    }
 
     const TOOLS = ["pickaxe", "axe", "sword", "shovel"];
     const crafted = [];
 
-    const craftingTableBlock = this.registry.blocksByName.crafting_table;
-    const table = craftingTableBlock
-      ? bot.findBlock({ matching: craftingTableBlock.id, maxDistance: 6 })
-      : null;
-
     for (const toolType of TOOLS) {
       const toolName = `${targetTier.name}_${toolType}`;
-      const already = inv.find((i) => i.name === toolName);
+      const already = bot.inventory.items().find((i) => i.name === toolName);
       if (already) continue;
 
-      const itemInfo = this.registry.itemsByName[toolName];
-      if (!itemInfo) continue;
-
-      const recipes = bot.recipesFor(itemInfo.id, null, 1, table || null);
-      if (!recipes || recipes.length === 0) continue;
-
       try {
-        await bot.craft(recipes[0], 1, table || null);
-        crafted.push(toolName);
-      } catch (_) { /* missing ingredients */ }
+        const ok = await _craft(toolName, 1, table);
+        if (ok) crafted.push(toolName);
+      } catch (_) {}
     }
 
     return { action: "make_tools", material: targetTier.name, crafted, ...this._context() };
@@ -2121,7 +2208,7 @@ class MineflayerSession {
   async runCommand({ command }) {
     const bot = this._requireBot();
     bot.chat(command);
-    this._pushChat(bot.username, command);
+    this._pushChat(bot.username, command, CHAT_TYPE_SELF);
     await new Promise((r) => setTimeout(r, 500));
     return {
       action: "run_command",

@@ -12678,5 +12678,922 @@
     "error": null,
     "timestamp": 1773294733.912149,
     "duration_ms": 44.5551872253418
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 6767
+    },
+    "result": null,
+    "success": false,
+    "error": "connect ECONNREFUSED 127.0.0.1:6767",
+    "timestamp": 1773451396.710078,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 6767
+    },
+    "result": null,
+    "success": false,
+    "error": "connect ECONNREFUSED 127.0.0.1:6767",
+    "timestamp": 1773452312.051202,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 6767
+    },
+    "result": null,
+    "success": false,
+    "error": "connect ECONNREFUSED 127.0.0.1:6767",
+    "timestamp": 1773452346.46978,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 6767
+    },
+    "result": null,
+    "success": false,
+    "error": "connect ECONNREFUSED 127.0.0.1:6767",
+    "timestamp": 1773452389.1553001,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 6767
+    },
+    "result": null,
+    "success": false,
+    "error": "connect ECONNREFUSED 127.0.0.1:6767",
+    "timestamp": 1773453049.4784582,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 6767
+    },
+    "result": null,
+    "success": false,
+    "error": "connect ECONNREFUSED 127.0.0.1:6767",
+    "timestamp": 1773453055.3425841,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 6767
+    },
+    "result": null,
+    "success": false,
+    "error": "connect ECONNREFUSED 127.0.0.1:6767",
+    "timestamp": 1773453087.1896372,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 6767
+    },
+    "result": null,
+    "success": false,
+    "error": "connect ECONNREFUSED 127.0.0.1:6767",
+    "timestamp": 1773453121.4715269,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "192.168.68.81",
+      "port": 6767
+    },
+    "result": null,
+    "success": false,
+    "error": "connect ECONNREFUSED 192.168.68.81:6767",
+    "timestamp": 1773453312.899162,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "192.168.68.61",
+      "port": 6767
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "192.168.68.61",
+      "port": 6767,
+      "position": {
+        "x": 54,
+        "y": 69,
+        "z": 163
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [],
+      "entities": [
+        {
+          "name": "vitusssssss",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "_commandblock",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "Patrikks",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 6
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773453385.206801,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 6767
+    },
+    "result": null,
+    "success": false,
+    "error": "connect ECONNREFUSED 127.0.0.1:6767",
+    "timestamp": 1773453571.267346,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "192.168.68.61",
+      "port": 6767
+    },
+    "result": null,
+    "success": false,
+    "error": "Profile not found, please restart your launcher if you recently created your profile",
+    "timestamp": 1773453659.0015302,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "192.168.68.61",
+      "port": 6767
+    },
+    "result": null,
+    "success": false,
+    "error": "Profile not found, please restart your launcher if you recently created your profile",
+    "timestamp": 1773453687.191392,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "192.168.68.61",
+      "port": 6767
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "192.168.68.61",
+      "port": 6767,
+      "position": {
+        "x": 39,
+        "y": 78,
+        "z": 151
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "apple",
+          "count": 1
+        }
+      ],
+      "entities": [
+        {
+          "name": "vitusssssss",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "Patrikks",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "_commandblock",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773453724.8894799,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "192.168.68.61",
+      "port": 6767
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "192.168.68.61",
+      "port": 6767,
+      "position": {
+        "x": 59,
+        "y": 69,
+        "z": 210
+      },
+      "health": 18.0,
+      "food": 16.0,
+      "inventory": [
+        {
+          "item": "apple",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 2
+        },
+        {
+          "item": "oak_log",
+          "count": 51
+        },
+        {
+          "item": "oak_sapling",
+          "count": 4
+        }
+      ],
+      "entities": [
+        {
+          "name": "vitusssssss",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "Patrikks",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "Lurayan",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "_commandblock",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "Theuwufurry",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773454527.1837492,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "craft_items",
+    "args": {
+      "item": "oak_planks",
+      "count": 4
+    },
+    "result": {
+      "action": "craft_items",
+      "item": "oak_planks",
+      "crafted": 4,
+      "position": {
+        "x": 51,
+        "y": 73,
+        "z": 214
+      },
+      "health": 18,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "apple",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 1
+        },
+        {
+          "item": "oak_log",
+          "count": 55
+        },
+        {
+          "item": "oak_planks",
+          "count": 4
+        },
+        {
+          "item": "oak_sapling",
+          "count": 4
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773454721.779352,
+    "duration_ms": 78.80806922912598
+  },
+  {
+    "tool_name": "craft_items",
+    "args": {
+      "item": "stick",
+      "count": 4
+    },
+    "result": {
+      "action": "craft_items",
+      "item": "stick",
+      "crafted": 4,
+      "position": {
+        "x": 51,
+        "y": 73,
+        "z": 214
+      },
+      "health": 18,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "apple",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 1
+        },
+        {
+          "item": "oak_log",
+          "count": 55
+        },
+        {
+          "item": "oak_planks",
+          "count": 2
+        },
+        {
+          "item": "oak_sapling",
+          "count": 4
+        },
+        {
+          "item": "stick",
+          "count": 4
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773454723.892282,
+    "duration_ms": 179.90779876708984
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "cobblestone",
+      "count": 12
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "cobblestone",
+      "mined": 0,
+      "position": {
+        "x": 51,
+        "y": 73,
+        "z": 214
+      },
+      "health": 18,
+      "food": 16,
+      "inventory": [
+        {
+          "item": "apple",
+          "count": 1
+        },
+        {
+          "item": "crafting_table",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 1
+        },
+        {
+          "item": "oak_log",
+          "count": 51
+        },
+        {
+          "item": "oak_planks",
+          "count": 14
+        },
+        {
+          "item": "oak_sapling",
+          "count": 4
+        },
+        {
+          "item": "stick",
+          "count": 4
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773454759.82422,
+    "duration_ms": 63.00997734069824
+  },
+  {
+    "tool_name": "place_block",
+    "args": {
+      "block": "crafting_table",
+      "x": 62,
+      "y": 71,
+      "z": 212
+    },
+    "result": {
+      "action": "place_block",
+      "block": "crafting_table",
+      "placed_at": {
+        "x": 62,
+        "y": 71,
+        "z": 212
+      },
+      "position": {
+        "x": 60,
+        "y": 72,
+        "z": 213
+      },
+      "health": 18,
+      "food": 15,
+      "inventory": [
+        {
+          "item": "apple",
+          "count": 1
+        },
+        {
+          "item": "crafting_table",
+          "count": 1
+        },
+        {
+          "item": "dirt",
+          "count": 1
+        },
+        {
+          "item": "oak_log",
+          "count": 51
+        },
+        {
+          "item": "oak_planks",
+          "count": 14
+        },
+        {
+          "item": "oak_sapling",
+          "count": 4
+        },
+        {
+          "item": "stick",
+          "count": 4
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773454798.879031,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "cobblestone",
+      "count": 12
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "cobblestone",
+      "mined": 0,
+      "position": {
+        "x": 53,
+        "y": 71,
+        "z": 150
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773455014.2262669,
+    "duration_ms": 109.66706275939941
+  },
+  {
+    "tool_name": "mine_resource",
+    "args": {
+      "name": "cobblestone",
+      "count": 12
+    },
+    "result": {
+      "action": "mine_resource",
+      "resource": "cobblestone",
+      "mined": 0,
+      "position": {
+        "x": 53,
+        "y": 71,
+        "z": 150
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773455054.728381,
+    "duration_ms": 105.31806945800781
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "192.168.68.61",
+      "port": 6767
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "192.168.68.61",
+      "port": 6767,
+      "position": {
+        "x": 44,
+        "y": 72,
+        "z": 151
+      },
+      "health": 20.0,
+      "food": 20.0,
+      "inventory": [
+        {
+          "item": "oak_log",
+          "count": 4
+        }
+      ],
+      "entities": [
+        {
+          "name": "vitusssssss",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "0rad",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "Theuwufurry",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "Patrikks",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "Lurayan",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        },
+        {
+          "name": "_commandblock",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773455093.295017,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "vitusssssss",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 0,
+      "hits": 27,
+      "position": {
+        "x": 47,
+        "y": 67,
+        "z": 127
+      },
+      "health": 20,
+      "food": 18,
+      "inventory": [
+        {
+          "item": "oak_log",
+          "count": 4
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773455184.643722,
+    "duration_ms": 45594.680070877075
+  },
+  {
+    "tool_name": "craft_items",
+    "args": {
+      "item": "oak_planks",
+      "count": 4
+    },
+    "result": {
+      "action": "craft_items",
+      "item": "oak_planks",
+      "crafted": 4,
+      "position": {
+        "x": 49,
+        "y": 68,
+        "z": 143
+      },
+      "health": 20,
+      "food": 18,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 1
+        },
+        {
+          "item": "oak_log",
+          "count": 3
+        },
+        {
+          "item": "oak_planks",
+          "count": 4
+        },
+        {
+          "item": "wooden_axe",
+          "count": 1
+        }
+      ]
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773455227.950578,
+    "duration_ms": 289.9162769317627
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "theuwufurry",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 1,
+      "hits": 1,
+      "position": {
+        "x": 51,
+        "y": 69,
+        "z": 157
+      },
+      "health": 0,
+      "food": 16,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773455250.140497,
+    "duration_ms": 15273.446798324585
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "Theuwufurry",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 0,
+      "hits": 28,
+      "position": {
+        "x": 60,
+        "y": 72,
+        "z": 215
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773455318.802811,
+    "duration_ms": 47339.24579620361
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "vitusssssss",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 0,
+      "hits": 66,
+      "position": {
+        "x": 40,
+        "y": 72,
+        "z": 158
+      },
+      "health": 20,
+      "food": 20,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773455426.934782,
+    "duration_ms": 64514.41287994385
+  },
+  {
+    "tool_name": "attack_entity",
+    "args": {
+      "name": "player",
+      "count": 1
+    },
+    "result": {
+      "action": "attack_entity",
+      "target": "player",
+      "killed": 0,
+      "hits": 1,
+      "position": {
+        "x": 40,
+        "y": 72,
+        "z": 157
+      },
+      "health": 20,
+      "food": 19,
+      "inventory": []
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773455462.897126,
+    "duration_ms": 1101.9032001495361
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "192.168.68.61",
+      "port": 53296
+    },
+    "result": {
+      "connected": true,
+      "mode": "real",
+      "username": "DedalusBot",
+      "host": "192.168.68.61",
+      "port": 53296,
+      "position": {
+        "x": 197,
+        "y": 131,
+        "z": 156
+      },
+      "health": 11.0,
+      "food": 3.0,
+      "inventory": [
+        {
+          "item": "dirt",
+          "count": 17
+        }
+      ],
+      "entities": [
+        {
+          "name": "vitusssssss",
+          "kind": "player",
+          "x": null,
+          "y": null,
+          "z": null
+        }
+      ],
+      "chat_backlog": 0
+    },
+    "success": true,
+    "error": null,
+    "timestamp": 1773457879.125937,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": null,
+    "success": false,
+    "error": "connect ECONNREFUSED 127.0.0.1:62327",
+    "timestamp": 1773458036.115867,
+    "duration_ms": 0.0
+  },
+  {
+    "tool_name": "join_game",
+    "args": {
+      "host": "127.0.0.1",
+      "port": 62327
+    },
+    "result": null,
+    "success": false,
+    "error": "connect ECONNREFUSED 127.0.0.1:62327",
+    "timestamp": 1773458073.45933,
+    "duration_ms": 0.0
   }
 ]
