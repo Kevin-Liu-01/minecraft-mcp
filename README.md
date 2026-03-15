@@ -1,5 +1,9 @@
 # Minecraft Dedalus MCP
 
+<p align="center">
+  <img src="MinecraftNight.gif" alt="Minecraft Dedalus MCP demo" width="600" />
+</p>
+
 LAN-oriented Minecraft MCP stack: Python MCP server + Node Mineflayer bridge. Control a bot via the Dedalus agent or in-game **chat as natural language commands**.
 
 **New in v2:** Skill library, multi-step planning, persistent world memory, freeform building from natural language, smelting/furnace automation, error recovery with retry, and a creative/survival mode toggle.
