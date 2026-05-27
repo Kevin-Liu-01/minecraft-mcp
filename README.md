@@ -1,7 +1,7 @@
-# Minecraft Dedalus MCP
+# Minecraft Agent
 
 <p align="center">
-  <img src="MinecraftNight.gif" alt="Minecraft Dedalus MCP demo" width="600" />
+  <img src="MinecraftNight.gif" alt="Minecraft Agent demo" width="600" />
 </p>
 
 LAN-oriented Minecraft MCP stack: Python MCP server + Node Mineflayer bridge. Control a bot via the Dedalus agent or in-game **chat as natural language commands**.
